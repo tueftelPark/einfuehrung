@@ -7,7 +7,7 @@ Die LED darf mit ana­log­Wri­te höchs­ten mit dem Wert 255 ange­steu­ert 
 
 //Zuerst die Variabeln definieren
 int eingang= A0; //Das Wort „eingang“ steht jetzt für den PIN an welchem der Drehregler angeschlossen ist.
-int LED = 13; //Das Wort „LED“ steht jetzt für den PIN an welchem die LED angeschlossen ist.
+int LED = 13; //Das Wort „LED“ steht jetzt für den PIN an welchem die LED angeschlossen ist. -> Wichtig nur PWM(~) nutzen!
 int sensorwert = 0; //Variable für den Sensorwert mit 0 als Startwert
 int helligkeit = 0; //Variable für die Helligkeit mit 0 als Startwert
 
