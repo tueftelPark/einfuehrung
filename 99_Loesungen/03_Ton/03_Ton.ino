@@ -10,6 +10,7 @@ int Spielzeit = 1000;
 void setup()
 {
 pinMode(Taster, INPUT);
+pinMode(Piezo, OUTPUT);
 }
 
 void loop()
