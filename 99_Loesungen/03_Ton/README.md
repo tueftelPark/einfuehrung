@@ -1,3 +1,1 @@
-![schaltplan-ton-erzeugen-durch-tastendruck Kopie](https://github.com/tueftelPark/Einfuehrung/assets/113671718/2f719796-3d83-46f6-84f3-6d7973b8e9a1)
-Taster wie folgt anschliessen:
-![0_full](https://github.com/tueftelPark/Einfuehrung/assets/113671718/051cef50-7f7f-4642-a88b-d5300c62dbf4)
+<img width="1134" alt="Bildschirmfoto 2023-09-20 um 08 28 04" src="https://github.com/tueftelPark/Einfuehrung/assets/113671718/0363a440-d90e-42b6-b6ad-312082f1d090">
