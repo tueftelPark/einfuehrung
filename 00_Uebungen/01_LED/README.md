@@ -1,6 +1,6 @@
 # Übung LED 
 
-Ergänze den Code so dass die LED blinkt. Die Befehlsliste soll dir dabei helfen.
+Ergänze den Code so dass die LED leuchtet. Die Befehlsliste soll dir dabei helfen.
 </br>
 </br>
 
