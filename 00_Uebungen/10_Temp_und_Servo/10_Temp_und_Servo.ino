@@ -1,3 +1,12 @@
+/* Befehle:
+pinMode(PIN, OUTPUT oder INPUT); <- definiert den PIN, OUTPUT gibt Strom und INPUT misst den Strom am PIN
+digitalWrite(PIN, HIGH oder LOW); <- schaltet eine etwas EIN (HIGH) oder AUS (LOW)
+digitalRead(PIN); <- liest den PIN aus. Falls Strom ankommt ist es HIGH und kein Strom LOW
+WERT = digitalRead(PIN); <- das HIGH oder LOW welches gemessen wurde, speichern wir in der Variable WERT (Achtung WERT muss bei den Variabel noch definiert werden!)
+delay(ZEIT); <- macht eine Pause mit der ZEIT in millisekunden
+analogWrite(PIN, 0 bis 255); <- neben digital gibt es auch analoge Signale. Hier gibt es nicht nur HIGH oder LOW, sondern du kannst eine Zahl von 0 bis 255 einsetzen.
+*/
+
 /************************( Importieren der genutzten Bibliotheken )************************/
 #include <Servo.h>  //Die Servobibliothek wird aufgerufen. Sie wird benötigt, damit die Ansteuerung des Servos vereinfacht wird.
 #include "DHT.h"    // dht.h importieren falls nicht verfügbar            
@@ -17,9 +26,10 @@ void setup() {
   Serial.begin(9600);
   Serial.println("DHT11 Testprogramm");
   dht.begin();
-  servoXYZ.attach(10); //mit dem XXX.attach müssen wir definieren, wo der Servo angeschlossen ist. (XXX=Servoname)
+  servoXYZ.attach(XX); // TODO: mit dem XXX.attach müssen wir definieren, wo der Servo angeschlossen ist. Fülle das XX aus.
 }
 void loop() {
+//************ Hier nichts anpassen, das ist vom Sensor *******************************
   // Wait a few seconds between measurements.
   delay(2000);                     // Hier definieren wir die Verweilzeit die gewartet wird  
                                    // bis der Sensor wieder ausgelesen wird. Da der DHT11  
@@ -38,19 +48,24 @@ void loop() {
   Serial.print(t);                  // Ausgeben der Temperatur
   Serial.print("°");                // Schreiben des ° Zeichen
   Serial.println("C");
-
-if (t < 29) 
+//**************************************************************************************
+// WICHTIG: die Temperatur wird in der Variabel (t) gespeichert
+// Diese Variabel können wir jetzt nutzen, um den Servo anzusteuern.
+  
+if (t < XX) //Wenn die Temperatur unter XX ist, dann mache ZZ
 {
 servoXYZ.write(0); //Position 1 ansteuern mit dem Winkel 0°
 } 
 
-else if ((t >29)&&(t <30)) 
+else if ((t >XX)&&(t <YY)) // Wenn der Wert zwischen XX und YY ist dann mache ZZ
 {
-servoXYZ.write(20); //Position 1 ansteuern mit dem Winkel 20°
+// Was soll dann geschehen? 
+  // Fahre mit dem Servo eine neue Position an.
 }
 
-else if ((t >30)&&(t <31)) 
+else if ((t >XX)&&(t <YY)) // Wenn der Wert zwischen XX und YY ist dann mache ZZ
 {
-servoXYZ.write(45); //Position 1 ansteuern mit dem Winkel 45°
+// Was soll dann geschehen? 
+  // Fahre mit dem Servo eine neue Position an.
 }
 }
