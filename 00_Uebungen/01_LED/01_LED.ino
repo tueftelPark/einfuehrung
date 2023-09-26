@@ -7,7 +7,7 @@ delay(ZEIT); <- macht eine Pause mit der ZEIT in millisekunden
 void setup() // Hier beginnt das Setup
 { 
 
-pinMode(13, OUTPUT); // Pin 13 wird als Ausgang definiert
+pinMode(PIN, mode); // Pin XX wird als Ausgang definiert
 
 } // Hier endet ein Programmabschnitt
 
