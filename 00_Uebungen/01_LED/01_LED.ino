@@ -1,3 +1,9 @@
+/* Befehle:
+pinMode(PIN, OUTPUT oder INPUT); <- definiert den PIN, OUTPUT gibt Strom und INPUT misst den Strom am PIN
+digitalWrite (PIN, HIGH oder LOW); <- schaltet eine etwas EIN (HIGH) oder AUS (LOW)
+delay(ZEIT); <- macht eine Pause mit der ZEIT in millisekunden
+*/
+
 void setup() // Hier beginnt das Setup
 { 
 
@@ -7,13 +13,11 @@ pinMode(13, OUTPUT); // Pin 13 wird als Ausgang definiert
 
 void loop() // Hier beginnt das Hauptprogramm
 { 
+//schalte eine LED ein
 
-digitalWrite(13, HIGH); // Schalte die Spannung an Pin 13 ein (LED AN)
+//warte 1 Sekunde
 
-delay(1000); // Warte 1000 Millisekunden (1 Sekunde)
-
-digitalWrite(13, LOW); // Schalte die Spannung an Pin 13 aus (LED AUS)
-
-delay(500); // Warte 500 Millisekunden (0.5 Sekunde)
-
+//schalte die LED wieder aus
+  
+  
 } // Hier endet ein Programmabschnitt
