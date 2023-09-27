@@ -16,10 +16,6 @@ Die importierten Bibliotheken dienen dazu Komponenten vereinfacht zu nutzen. Ohn
 <li>delay(ZEIT); <- macht eine Pause mit der ZEIT in millisekunden</li>
 <li>analogWrite(PIN, 0 bis 255); <- neben digital gibt es auch analoge Signale. Hier gibt es nicht nur HIGH oder LOW, sondern du kannst eine Zahl von 0 bis 255 einsetzen.</li>
 </ul> 
-</br>
-<h3>Neu</h3>
- Wir benutzen den Servo. Mit dem Servo-Motor können verschiedene Richtungen anzeigen lassen.
-Um den Servo zu nutzen, müssen wir die Bibliothek aufrufen. Falls beim Upload eine Fehlermeldung kommt, dann melde dich beim Coach
 
 </br>
 </br>
