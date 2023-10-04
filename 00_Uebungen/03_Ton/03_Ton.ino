@@ -16,16 +16,16 @@ der Taster angeschlossen ist.
 */
 
 //Definiere zuerst die Variabeln
-int Taster = PIN ; //PIN an welchem der Taster angeschlossen ist - muss mit Zahl ergänzt werden
-int Piezo = PIN; //PIN an welchem der Piezo angeschlossen ist - muss mit Zahl ergänzt werden
+int Taster = PIN ; //TODO: PIN an welchem der Taster angeschlossen ist - muss mit Zahl ergänzt werden
+int Piezo = PIN; //TODO: PIN an welchem der Piezo angeschlossen ist - muss mit Zahl ergänzt werden
 int Tasterstatus=0; // nicht ändern. Dies ist ein Startwert und wird definiert damit das Arduino weiss, dass es sich im eine Zahl handelt.
-int Spielzeit = MILLISEKUNDEN; //hier definieren wir die Zeit im Befehl delay(ZEIT) - den kennst du noch von der LED Übung! 
+int Spielzeit = MILLISEKUNDEN; //TODO: Millisekunden anpassen. hier definieren wir die Zeit im Befehl delay(ZEIT) - den kennst du noch von der LED Übung! 
 
 void setup()
 {
 pinMode(Taster, INPUT); // Hier nutzen wir das Wort Taster als PIN-Nummer welche oben definiert ist in den Variabeln 
   // und der Taster in ein Input, da wir den Strom messen am PIN
-pinMode(XXXX, mode); // Nutze hier die Variabel für den Piezo und der Piezo gibt einen Ton aus. Ist es ein INPUT oder OUTPUT?
+pinMode(XXXX, mode); // TODO: Nutze hier die Variabel für den Piezo und der Piezo gibt einen Ton aus. Ist es ein INPUT oder OUTPUT?
 }
 
 void loop()
@@ -35,11 +35,11 @@ Tasterstatus = digitalRead(Taster); // hier lesen wir den PIN aus mit digitalRea
 if (Tasterstatus == HIGH) // Wenn der Taster gedrückt ist... also wenn der PIN Strom bekommt, dann ist das Signal HIGH
 {
 tone(Piezo, 300); // …spiele diesen Ton...
-delay(XXXX); //…und zwar so lange, wie die Spielzeit definiert ist... füge hier die Variabel für die Zeit hinzu
+delay(XXXX); //TODO: …und zwar so lange, wie die Spielzeit definiert ist... füge hier die Variabel für die Zeit hinzu
 noTone(Piezo); // Ton abschalten
 }
 else {
-  // wenn nichts gedrückt wird mache nichts
+  // wenn nichts gedrückt wird, mache nichts
 }
 }
 
