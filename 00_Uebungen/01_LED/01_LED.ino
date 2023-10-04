@@ -7,17 +7,19 @@ delay(ZEIT); <- macht eine Pause mit der ZEIT in millisekunden
 void setup() // Hier beginnt das Setup
 { 
 
-pinMode(PIN, mode); // Pin XX wird als Ausgang definiert
+pinMode(PIN, mode); //TODO: Pin XX wird als Ausgang definiert
 
 } // Hier endet ein Programmabschnitt
 
 void loop() // Hier beginnt das Hauptprogramm
 { 
-//schalte eine LED ein
+//TODO: schalte eine LED ein
 
-//warte 1 Sekunde
+//TODO: warte 1 Sekunde
 
-//schalte die LED wieder aus
+//TODO: schalte die LED wieder aus
+
+//TODO: warte 1 Sekunde
   
   
 } // Hier endet ein Programmabschnitt
