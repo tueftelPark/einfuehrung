@@ -16,23 +16,23 @@ Die LED darf mit ana­log­Wri­te höchs­ten mit dem Wert 255 ange­steu­ert 
 */
 
 //Zuerst die Variabeln definieren
-int potiBlau= A0; //Das Wort „eingang“ steht jetzt für den PIN an welchem der Drehregler angeschlossen ist.
-int potiRot= A1; //Das Wort „eingang“ steht jetzt für den PIN an welchem der Drehregler angeschlossen ist.
-int potiGruen= A2; //Das Wort „eingang“ steht jetzt für den PIN an welchem der Drehregler angeschlossen ist.
+int potiBlau= A0; //TODO: Das Wort „eingang“ steht jetzt für den PIN an welchem der Drehregler angeschlossen ist.
+int potiRot= A1; //TODO: Das Wort „eingang“ steht jetzt für den PIN an welchem der Drehregler angeschlossen ist.
+int potiGruen= A2; //TODO: Das Wort „eingang“ steht jetzt für den PIN an welchem der Drehregler angeschlossen ist.
 
 int LEDblau = 3; // Farbe blau an Pin 3 -> Wichtig nur PWM(~) nutzen!
-// Ergänze noch rot und grün
+// TODO: Ergänze noch rot und grün
 
 int sensorwertBlau = 0; //Variable für den Sensorwert mit 0 als Startwert
-// Ergänze noch rot und grün
+// TODO: Ergänze noch rot und grün
 
-int helligkeitBlau = 0; //Variable für die Helligkeit mit 0 als Startwert
-// Ergänze noch rot und grün
+int helligkeitBlau = 0; //TEST: Variable für die Helligkeit mit 0 als Startwert
+// TODO: Ergänze noch rot und grün
 
 void setup()
 {
 pinMode(LEDblau, mode); // TODO: ist es ein OUTPUT oder INPUT?
-// Ergänze noch rot und grün
+// TODO: Ergänze noch rot und grün
   
 }
 
@@ -42,6 +42,6 @@ void loop()
   helligkeitBlau = sensorwertBlau/4; //1023 / 4 = 255 --> analogWrite geht nur bis 255 und Poti bis 1023
   analogWrite(LEDblau, helligkeitBlau); 
 
-  // mach das ganze noch für ROT und GRÜN
+  // TODO: mach das ganze noch für ROT und GRÜN
   
 }
