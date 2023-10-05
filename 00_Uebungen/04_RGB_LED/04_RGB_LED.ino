@@ -8,32 +8,32 @@ analogWrite(PIN, 0 bis 255); <- neben digital gibt es auch analoge Signale. Hier
 */
 
 //Zuerst die Variabeln definieren
-int LEDblau = PIN; // Farbe blau an Pin XX -> Wichtig nur PWM(~) nutzen!
-int LEDrot = PIN; // Farbe rot an Pin XXX -> Wichtig nur PWM(~) nutzen!
-int LEDgruen = PIN; // Farbe gruen an Pin XX -> Wichtig nur PWM(~) nutzen!
+int LEDblau = PIN; // TODO: Farbe blau an Pin XX -> Wichtig nur PWM(~) nutzen!
+int LEDrot = PIN; // TODO: Farbe rot an Pin XXX -> Wichtig nur PWM(~) nutzen!
+int LEDgruen = PIN; // TODO: Farbe gruen an Pin XX -> Wichtig nur PWM(~) nutzen!
 
-int helligkeitBlau = 255; //Variable für die Helligkeit  > eine Zahl zwischen 0 (aus) und 255 (ganz hell)
-int helligkeitRot = 0; //Variable für die Helligkeit  > eine Zahl zwischen 0 (aus) und 255 (ganz hell)
-int helligkeitGruen = 0; //Variable für die Helligkeit  > eine Zahl zwischen 0 (aus) und 255 (ganz hell)
+int helligkeitBlau = 255; //TESTEN: Variable für die Helligkeit  > eine Zahl zwischen 0 (aus) und 255 (ganz hell)
+int helligkeitRot = 0; //TESTEN: Variable für die Helligkeit  > eine Zahl zwischen 0 (aus) und 255 (ganz hell)
+int helligkeitGruen = 0; //TESTEN: Variable für die Helligkeit  > eine Zahl zwischen 0 (aus) und 255 (ganz hell)
 
 void setup()
 {
-//Definiere die blaue LED
+//TODO: Definiere die blaue LED
 
-//Definiere die rote LED
+//TODO: Definiere die rote LED
 
-//Definiere die grüne LED
+//TODO: Definiere die grüne LED
   
 }
 
 void loop()
 {
   analogWrite(LEDblau, helligkeitBlau); //Jetzt wird der PIN für die blaue LED genommen und die Helligkeit von der Variabel
-  //füge hier noch eine Wartezeit von 1sek hinzu
+  //TODO: füge hier noch eine Wartezeit von 1sek hinzu
   
-  analogWrite(LEDblau, 25); // Du kannst auch direkt eine Nummer eingeben um die blaue LED in der Helligkeit zu wechseln
+  analogWrite(LEDblau, 25); // TEST: Du kannst auch direkt eine Nummer eingeben um die blaue LED in der Helligkeit zu wechseln
   
-  // lasse alle anderen RGB-Farben auch leuchten
-  // du kannst sie nacheinander leuchten lassen oder alle gleichzeitig 
-  // was passiert wenn du Rot, Grün und Blau mischt? 
+  // TODO: lasse alle anderen RGB-Farben auch leuchten
+  // TODO: du kannst sie nacheinander leuchten lassen oder alle gleichzeitig 
+  // TODO: was passiert wenn du Rot, Grün und Blau mischt? 
 }
