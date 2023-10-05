@@ -17,8 +17,8 @@ Unten im Programm siehst du, dass wir den Wert des Potentiometer zuerst umrechne
 */
 
 //Zuerst die Variabeln definieren
-int LED = XX; // TODO! Das Wort „LED“ steht jetzt für den PIN an welchem die LED angeschlossen ist. -> Wichtig nur PWM(~) nutzen!
-int eingang= A0; //Das Wort „eingang“ steht jetzt für den PIN an welchem der Drehregler angeschlossen ist.
+int LED = XX; // TODO: Das Wort „LED“ steht jetzt für den PIN an welchem die LED angeschlossen ist. -> Wichtig nur PWM(~) nutzen!
+int eingang= A0; //TODO: Das Wort „eingang“ steht jetzt für den ANALOGEN PIN an welchem der Drehregler angeschlossen ist.
 int sensorwert = 0; //Variable für den Sensorwert mit 0 als Startwert
 int helligkeit = 0; //Variable für die Helligkeit mit 0 als Startwert
 
@@ -34,5 +34,5 @@ void loop()
   //der sensorwert haben wir umgerechnet in die helligkeit und diese nutzen wir wie bekannt zum Steuern der Helligkeit unserer LED
   analogWrite(LED, helligkeit); 
 
-//Versuche weitere LED's anzusteuern - schaffst du das? 
+//TODO: Versuche weitere LED's anzusteuern - schaffst du das? 
 }
