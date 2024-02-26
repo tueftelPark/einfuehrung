@@ -12,17 +12,22 @@ Dies geschieht mit den analogen Eingängen auf dem Board. Dieser wandelt den gem
 0 Volt entspricht dabei der Zahl 0 und der höchste Messwert 5 Volt entspricht der Zahl 1023 (0 bis 1023 entspricht 1024 Zahlen = 10 Bit).
 */
 
-int eingang = A0; //TODO: Das Wort „eingang“ steht  für den PIN an welchem der Sensor angeschlossen ist
-int LED = XX; // TODO: Das Wort „LED“ steht für den PIN an welchem die LED angeschlossen ist
+//TODO: Das Wort „eingang“ steht  für den PIN an welchem der Sensor angeschlossen ist - Nutze einen Analogen PIN
+int eingang = XX; 
+// TODO: Das Wort „LED“ steht für den PIN an welchem die LED angeschlossen ist - Nutze einen Digitalen PIN
+int LED = XX; 
+
+
 int sensorWert = 0; //Variable für den Sensorwert mit 0 als Startwert
 
 void setup()
 {
-  //-> NEU! Serial-Monitor: Das Arduino kann dir auch Informationen anzeigen lassen, welche du ausliest. Klicke dafür oben rechts auf die Lupe
+  //NEU: Serial-Monitor - Das Arduino kann dir auch Informationen anzeigen lassen, welche du ausliest. Klicke dafür oben rechts auf die Lupe
 Serial.begin(9600); //Die Kommunikation mit dem seriellen Port wird gestartet. Das benötigt man, um sich den tatsächlich ausgelesenen Wert später im serial monitor anzeigen zu lassen.
 
 //TODO: Definiere hier noch die LED
 
+  
 }
 
 void loop()
@@ -37,16 +42,19 @@ if (sensorWert > 512 ) //TEST: Wenn der Sensorwert über 512 beträgt….
   // Passe anschliessend den Wert im if-Statement an
 {
 // was soll passieren, wenn dieser Wert erreicht ist? 
-  // TODO: Schalte mal eine LED an
+// TODO: Schalte mal eine LED an
+
   
 }
 
 else //andernfalls…
 {
-// TODO: und wenn der Wert nicht erreicht wird? Dann schalte die LED aus$
+// TODO: und wenn der Wert nicht erreicht wird? Dann schalte die LED aus
+  
   
 }
 //TODO:Eine kurze Pause, in der die LED an oder aus ist
+  
   
 }
 
