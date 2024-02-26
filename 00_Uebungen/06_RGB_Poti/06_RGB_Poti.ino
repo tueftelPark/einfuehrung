@@ -16,9 +16,12 @@ Die LED darf mit ana­log­Wri­te höchs­ten mit dem Wert 255 ange­steu­ert 
 */
 
 //Zuerst die Variabeln definieren
-int potiBlau= A0; //TODO: Das Wort „eingang“ steht jetzt für den PIN an welchem der Drehregler angeschlossen ist.
-int potiRot= A1; //TODO: Das Wort „eingang“ steht jetzt für den PIN an welchem der Drehregler angeschlossen ist.
-int potiGruen= A2; //TODO: Das Wort „eingang“ steht jetzt für den PIN an welchem der Drehregler angeschlossen ist.
+//TODO: Das Wort „potiBlau“ steht jetzt für den PIN an welchem der Drehregler1 angeschlossen ist.
+int potiBlau= XX; 
+//TODO: Das Wort „potiRot“ steht jetzt für den PIN an welchem der Drehregler2 angeschlossen ist.
+int potiRot= XX; 
+//TODO: Das Wort „potiGruen“ steht jetzt für den PIN an welchem der Drehregler3 angeschlossen ist.
+int potiGruen= XX; 
 
 int LEDblau = 3; // Farbe blau an Pin 3 -> Wichtig nur PWM(~) nutzen!
 // TODO: Ergänze noch rot und grün
@@ -26,12 +29,14 @@ int LEDblau = 3; // Farbe blau an Pin 3 -> Wichtig nur PWM(~) nutzen!
 int sensorwertBlau = 0; //Variable für den Sensorwert mit 0 als Startwert
 // TODO: Ergänze noch rot und grün
 
-int helligkeitBlau = 0; //TEST: Variable für die Helligkeit mit 0 als Startwert
+int helligkeitBlau = 0; // Variable für die Helligkeit mit 0 als Startwert
 // TODO: Ergänze noch rot und grün
+
 
 void setup()
 {
-pinMode(LEDblau, mode); // TODO: ist es ein OUTPUT oder INPUT?
+// TODO: Definiere die LED - ist es ein OUTPUT oder INPUT?
+pinMode(LEDblau, YY); 
 // TODO: Ergänze noch rot und grün
   
 }
