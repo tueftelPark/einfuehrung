@@ -8,7 +8,7 @@ analogWrite(PIN, 0 bis 255); <- neben digital gibt es auch analoge Signale. Hier
 */
 
 /*
-Ein Drehregler hat drei Anschlüsse. Außen wird + und – angeschlossen. Von dem mittleren Pin geht ein Kabel zu einem analogen Eingangspin am Mikrocontroller-Board. 
+NEU: Ein Drehregler hat drei Anschlüsse. Aussen wird + und – angeschlossen. Von dem mittleren Pin geht ein Kabel zu einem analogen Eingangspin am Mikrocontroller-Board. 
 Wenn man den Drehregler dreht, dann gibt der mittlere Pin eine Spannung zwischen 0 und 5 Volt aus. 
 Drehregler ganz links: 0 V und Drehregler ganz rechts: 5V, bzw. Seitenverkehrt, je nach Verkabelung.
 
@@ -17,14 +17,17 @@ Unten im Programm siehst du, dass wir den Wert des Potentiometer zuerst umrechne
 */
 
 //Zuerst die Variabeln definieren
-int LED = XX; // TODO: Das Wort „LED“ steht jetzt für den PIN an welchem die LED angeschlossen ist. -> Wichtig nur PWM(~) nutzen!
-int eingang= A0; //TODO: Das Wort „eingang“ steht jetzt für den ANALOGEN PIN an welchem der Drehregler angeschlossen ist.
+// TODO: Das Wort „LED“ steht jetzt für den PIN an welchem die LED angeschlossen ist. -> Wichtig nur PWM(~) nutzen!
+int LED1 = XX; 
+//TODO: Das Wort „eingang“ steht jetzt für den ANALOGEN PIN an welchem der Drehregler angeschlossen ist. Nutze einen PIN mit einem A0 bis A5
+int eingang= XX; 
+
 int sensorwert = 0; //Variable für den Sensorwert mit 0 als Startwert
 int helligkeit = 0; //Variable für die Helligkeit mit 0 als Startwert
 
 void setup()
 {
-pinMode (LED, OUTPUT); //Der Pin mit der LED (Pin XX) ist jetzt ein Ausgang.
+pinMode (LED1, OUTPUT); //Der Pin mit der LED (Pin XX) ist jetzt ein Ausgang.
 }
 
 void loop()
@@ -32,7 +35,8 @@ void loop()
   sensorwert = analogRead(eingang); // das kennst du bereits, wir lesen den eingang aus und speichern dies im sensorwert
   helligkeit = sensorwert/4; //1023 / 4 = 255 --> analogWrite geht nur bis 255 und Poti bis 1023 
   //der sensorwert haben wir umgerechnet in die helligkeit und diese nutzen wir wie bekannt zum Steuern der Helligkeit unserer LED
-  analogWrite(LED, helligkeit); 
+  analogWrite(LED1, helligkeit); 
 
 //TODO: Versuche weitere LED's anzusteuern - schaffst du das? 
+  
 }
