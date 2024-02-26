@@ -1,14 +1,14 @@
 /* Befehle:
 pinMode(PIN, OUTPUT oder INPUT); <- definiert den PIN, OUTPUT gibt Strom und INPUT misst den Strom am PIN
 digitalWrite (PIN, HIGH oder LOW); <- schaltet eine etwas EIN (HIGH) oder AUS (LOW)
-delay(ZEIT); <- macht eine Pause mit der ZEIT in millisekunden
+delay(ZEIT); <- macht eine Pause mit der ZEIT in millisekunden, ersetze ZEIT mit einer Zahl
 */
 
 void setup() //Wir starten mit dem Setup
 {
-//Fülle die Definition aus
-pinMode(PIN, mode); //TODO ergänze den Befehl
-// TODO: Definiere eine zweite LED
+//TODO: ergänze den Befehl - TIPP: Siehe oben bei Befehle nach
+pinMode(XX, YY); 
+//TODO: Definiere eine zweite LED
 
 }
 
@@ -28,4 +28,6 @@ void loop()
 
 //TODO: warten 1 Sekunde
 
+  
+//TEST: Lass es schneller oder langsamer blinken. Du kannst gleichzeitig oder abwechselnd blinken  
 }
