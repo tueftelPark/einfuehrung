@@ -24,10 +24,3 @@ Wir lernen Variabeln! Eine Variabel ist ein Wort welche wir anstelle einer Zahl 
 mit int sagen wir dem Arduino, dass es sich um eine Zahl handelt. int Taster = 6; bedeutet wir geben dem Wort Taster die Zahl 6.
 Jedes Mal wenn wir das Wort Taster nutzen, dann nimmt das Arduino die Zahl 6. In unserem Fall ist die Zahl 6 der PIN an welchem
 der Taster angeschlossen ist.
-
-
-
-<div style="text-align:center;">
-  <img src="https://github.com/tueftelPark/Einfuehrung/assets/113671718/0363a440-d90e-42b6-b6ad-312082f1d090" alt="Beschreibung des Bildes">
-</div>
-

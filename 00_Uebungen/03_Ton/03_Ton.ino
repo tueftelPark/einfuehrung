@@ -1,5 +1,5 @@
 /* Befehle:
-pinMode(PIN, OUTPUT oder INPUT); <- definiert den PIN, OUTPUT gibt Strom und INPUT misst den Strom am PIN
+pinMode(PIN, OUTPUT oder INPUT); <- definiert den PIN (ohne D), OUTPUT gibt Strom und INPUT misst den Strom am PIN
 digitalWrite(PIN, HIGH oder LOW); <- schaltet eine etwas EIN (HIGH) oder AUS (LOW)
 digitalRead(PIN); <- liest den PIN aus. Falls Strom ankommt ist es HIGH und kein Strom LOW
 WERT = digitalRead(PIN); <- das HIGH oder LOW welches gemessen wurde, speichern wir in der Variable WERT (Achtung WERT muss bei den Variabel noch definiert werden!)
@@ -16,10 +16,10 @@ der Taster angeschlossen ist.
 */
 
 //Definiere zuerst die Variabeln
-//TODO: PIN an welchem der Taster (kleiner Druckknopf) angeschlossen ist - muss mit Zahl ergänzt werden
+//TODO: PIN-Nummer für den Button auf dem SensorKit (ohne D)
 int Taster = XX ; 
-//TODO: PIN an welchem der Piezo angeschlossen ist - muss mit Zahl ergänzt werden - der Piezo ist der kleine schwarze "Lautsprecher"
-int Piezo = XX; 
+//TODO: PIN-Nummer für den Buzzer auf dem SensorKit (ohne D) - muss mit Zahl ergänzt werden - der Buzzer ist der kleine schwarze "Lautsprecher"
+int Buzzer = XX; 
 //TODO: Millisekunden anpassen. hier definieren wir die Zeit im Befehl delay(ZEIT) - den kennst du noch von der LED Übung! 
 int Spielzeit = XX; 
 
@@ -28,7 +28,7 @@ int Tasterstatus=0; // nicht ändern. Dies ist ein Startwert und wird definiert 
 
 void setup()
 {
-// TODO: Nutze hier die Variabel für den Piezo und der Piezo gibt einen Ton aus. Ist es ein INPUT oder OUTPUT?
+// TODO: Nutze hier die Variabel für den Buzzer und der Buzzer gibt einen Ton aus. Ist es ein INPUT oder OUTPUT?
 pinMode(XX, YY); 
 
 pinMode(Taster, INPUT); // Hier nutzen wir das Wort Taster als PIN-Nummer welche oben definiert ist in den Variabeln 
@@ -41,12 +41,12 @@ Tasterstatus = digitalRead(Taster); // hier lesen wir den PIN aus mit digitalRea
 //NEU: Wir lernen if/else - wenn das passiert mache das (if) und anonsten das andere (else)
 if (Tasterstatus == HIGH) // Wenn der Taster gedrückt ist... also wenn der PIN Strom bekommt, dann ist das Signal HIGH
 {
-tone(Piezo, 300); // …spiele diesen Ton... //TEST: Verändere die Zahl in diesem Befehel - was passiert?
+tone(Buzzer, 300); // …spiele diesen Ton... //TEST: Verändere die Zahl in diesem Befehel - was passiert?
   
-//TODO: füge hier die Variabel für die Zeit hinzu - siehe oben bei Definiere die Variabeln wie diese heisst 
+//TODO: füge hier die Variabel für die Zeit hinzu (keine Zahl) - siehe oben bei Definiere die Variabeln wie diese heisst 
 delay(ZZ); 
 
-noTone(Piezo); // Ton abschalten
+noTone(Buzzer); // Ton abschalten
 }
 else {
   // wenn nichts gedrückt wird, mache nichts

@@ -1,6 +1,6 @@
 # Übung LEDblink
 
-Ergänze den Code so dass beide LED blinken. Die Befehlsliste soll dir dabei helfen.
+Ergänze den Code so dass die LED auf dem SensorKit blinkt. Die Befehlsliste soll dir dabei helfen.
 </br>
 </br>
 
@@ -14,9 +14,3 @@ Ergänze den Code so dass beide LED blinken. Die Befehlsliste soll dir dabei hel
   
 </br>
 
-
-
-
-<div style="text-align:center;">
-  <img src="https://github.com/tueftelPark/Einfuehrung/assets/113671718/9e7dac7b-99e6-4e68-849c-8a766598afef" alt="Beschreibung des Bildes">
-</div>
