@@ -21,6 +21,6 @@ void loop() // Hier beginnt das Hauptprogramm
 //TODO: schalte die LED wieder aus
 
 //TODO: warte 1 Sekunde //TEST: Verändere die Zeit - was passiert?
-  
+
   
 } // Hier endet ein Programmabschnitt

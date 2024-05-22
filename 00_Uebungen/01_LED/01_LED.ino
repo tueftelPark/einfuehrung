@@ -14,13 +14,13 @@ pinMode(XX, YY);
 
 void loop() // Hier beginnt das Hauptprogramm
 { 
-//TODO: schalte eine LED ein
-
+//TODO: schalte eine LED ein - XX mit einer Zahl ersetzen und YY durch HIGH oder LOW ersetzen
+digitalWrite(XX, YY);
 //TODO: warte 1 Sekunde //TEST: Verändere die Zeit - was passiert?
-
+delay(ZZ)
 //TODO: schalte die LED wieder aus
 
 //TODO: warte 1 Sekunde //TEST: Verändere die Zeit - was passiert?
-  
+
   
 } // Hier endet ein Programmabschnitt

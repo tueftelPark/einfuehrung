@@ -28,11 +28,14 @@ int Tasterstatus=0; // nicht ändern. Dies ist ein Startwert und wird definiert 
 
 void setup()
 {
-// TODO: Nutze hier die Variabel für den Buzzer und der Buzzer gibt einen Ton aus. Ist es ein INPUT oder OUTPUT?
-pinMode(XX, YY); 
 
 pinMode(Taster, INPUT); // Hier nutzen wir das Wort Taster als PIN-Nummer welche oben definiert ist in den Variabeln 
 // und der Taster in ein Input, da wir den Strom messen am PIN
+
+// TODO: Nutze hier die Variabel für den Buzzer und der Buzzer gibt einen Ton aus. Ist es ein INPUT oder OUTPUT?
+pinMode(XX, YY); 
+
+
 }
 
 void loop()
@@ -43,8 +46,8 @@ if (Tasterstatus == HIGH) // Wenn der Taster gedrückt ist... also wenn der PIN 
 {
 tone(Buzzer, 300); // …spiele diesen Ton... //TEST: Verändere die Zahl in diesem Befehel - was passiert?
   
-//TODO: füge hier die Variabel für die Zeit hinzu (keine Zahl) - siehe oben bei Definiere die Variabeln wie diese heisst 
-delay(ZZ); 
+//TODO: Füge hier eine Pause mit der Länge "Spielzeit" ein. Nutze die Variabel nicht die Zahl.
+
 
 noTone(Buzzer); // Ton abschalten
 }
