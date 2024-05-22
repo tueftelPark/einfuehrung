@@ -14,15 +14,17 @@ Oled.print("Text"); <- Auf dem Display wird Text angezeigt
 
 void setup()
 {
-Oled.begin();
-Oled.setFlipMode(true);
-//Serial.begin(9600);
+Oled.begin(); // Startet Kommunikation mit dem Display
+Oled.setFlipMode(true); // Legt die Orientation vom Diasplay fest
+
 }
 
 void loop()
 {
   // TODO: ersetze X mit der nummer für den Drehregler
-  int sensorWert = analogRead(A0);
+  int sensorWert = analogRead(AX);
+
+  
   int prozent = map(sensorWert, 0, 1023, 100, 0); // Rechnet Zahlen zwischen 1 und 1023 in Prozentwerte um.
   Oled.setFont(u8x8_font_chroma48medium8_r); // Schriftart
   Oled.setCursor(0, 33);    // Position des Textes auf dem Display
