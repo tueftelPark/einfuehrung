@@ -1,3 +1,5 @@
 # Übung RGB LED 
 
-![RGB LED Anschliessen:](<RGB LED-2.jpg>)
+Schliesse die RGB LED bei Pin 11, 12, 13 und GND an:
+
+![RGB LED Anschliessen:](<RGB LED.jpg>)
