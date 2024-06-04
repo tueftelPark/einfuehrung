@@ -8,33 +8,42 @@ analogWrite(PIN, 0 bis 255); <- NEU: neben digital gibt es auch analoge Signale.
 */
 
 //Zuerst die Variabeln definieren
-// TODO: Farbe blau an Pin XX -> Wichtig nur PWM(~) nutzen! Auf deinem Arduino sind dies die Nummern mit einer kleinen Welle
-int LEDblau = XX; 
-// TODO: Farbe rot an Pin XXX -> Wichtig nur PWM(~) nutzen!
+
+// TODO: Farbe rot an Pin XXX -> Wichtig nur PWM(~) nutzen! Auf deinem Arduino sind dies die Nummern mit einer kleinen Welle -> z.B. 10~
 int LEDrot = XX; 
 // TODO: Farbe gruen an Pin XX -> Wichtig nur PWM(~) nutzen! 
 int LEDgruen = XX; 
+// TODO: Farbe blau an Pin XX -> Wichtig nur PWM(~) nutzen! 
+int LEDblau = XX; 
 
-int helligkeitBlau = 255; //TEST: Variable für die Helligkeit  > eine Zahl zwischen 0 (aus) und 255 (ganz hell)
-int helligkeitRot = 0; //TEST: Variable für die Helligkeit  > eine Zahl zwischen 0 (aus) und 255 (ganz hell)
-int helligkeitGruen = 0; //TEST: Variable für die Helligkeit  > eine Zahl zwischen 0 (aus) und 255 (ganz hell)
+int RotAn = 255; //TEST: Variable für das Einschalten
+int GruenAn = 255; //TEST: Variable für das Einschalten
+int BlauAn = 255; //TEST: Variable für das Einschalten
+
+//TODO: Ersetze das Z mit der Zahl zum Ausschalten
+
+int BlauAus = Z; //TEST: Variable für das Ausschalten
+int RotAus = Z; //TEST: Variable für das Ausschalten
+int GruenAus = Z; //TEST: Variable für das Ausschalten
 
 void setup()
 {
-//TODO: Definiere die blaue LED
+//TODO: Definiere den Pin für die blaue LED -> Nutze die Variabeln und nicht die PIN-Zahl
 
-//TODO: Definiere die rote LED
+//TODO: Definiere den Pin für die rote LED
 
-//TODO: Definiere die grüne LED
+//TODO: Definiere den Pin für die grüne LED
   
 }
 
 void loop()
 {
-  analogWrite(LEDblau, helligkeitBlau); //Jetzt wird der PIN für die blaue LED genommen und die Helligkeit von der Variabel
-  //TODO: füge hier noch eine Wartezeit von 1sek hinzu
+  analogWrite(LEDblau, BlauAn); //Jetzt wird der PIN für die blaue LED genommen und die Helligkeit von der Variabel
+  delay(1000);
+  analogWrite(LEDblau, BlauAus);
+  // TODO: Lasse alle anderen RGB-Farben auch NACHEINANDER leuchten -> Vergiss den delay nicht!
+
   
-  // TODO: lasse alle anderen RGB-Farben auch leuchten
-  // TODO: du kannst sie nacheinander leuchten lassen oder alle gleichzeitig 
-  // TEST: was passiert wenn du Rot, Grün und Blau mischt? 
-}
+  // TODO: Lasse alle Farben gleichzeitig leuchten -> Was passiert?
+ 
+  // TEST: Was passiert wenn du verschiedene Kombinationen gleichzeitig leuchten lässt?
