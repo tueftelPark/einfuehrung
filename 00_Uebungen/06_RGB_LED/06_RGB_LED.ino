@@ -45,5 +45,10 @@ void loop()
 
   
   // TODO: Lasse alle Farben gleichzeitig leuchten -> Was passiert?
- 
+  
+
   // TEST: Was passiert wenn du verschiedene Kombinationen gleichzeitig leuchten lässt?
+
+
+  // TEST: Was passiert, wenn du das 255 mit einer Zahl zwischen 0-255 ersetzt?
+  
