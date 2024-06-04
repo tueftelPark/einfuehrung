@@ -1,26 +1,30 @@
-//Zuerst die Variabeln definieren
-int LEDblau = 3; // Farbe blau an Pin 3 -> Wichtig nur PWM(~) nutzen!
-int LEDrot = 5; // Farbe rot an Pin 5 -> Wichtig nur PWM(~) nutzen!
-int LEDgruen = 6; // Farbe gruen an Pin 6 -> Wichtig nur PWM(~) nutzen!
 
-int helligkeitBlau = 0; //Variable für die Helligkeit  > eine Zahl zwischen 0 (aus) und 255 (ganz hell)
-int helligkeitRot = 0; //Variable für die Helligkeit  > eine Zahl zwischen 0 (aus) und 255 (ganz hell)
-int helligkeitGruen = 0; //Variable für die Helligkeit  > eine Zahl zwischen 0 (aus) und 255 (ganz hell)
+//TODO: Welche PIN Nummer hat die LED -> schaue dazu auf dem Sensor-Kit und ersetze unten das X mit der Nummer (ohne das D)
+int LED = X; //Hier speichern wir eine Zahl (der PIN von unserer LED) auf das Wort LED (LED ist die Variabel)
 
-void setup()
-{
-pinMode(LEDblau, OUTPUT);
-pinMode(LEDrot, OUTPUT);
-pinMode(LEDgruen, OUTPUT);
+void setup() { //Das Setup wird nur einmal ausgeführt -> Beim Start des Arduinos
+Serial.begin(9600); //Starte die Kommunikation mit dem Serial Monitor
+pinMode(LED,OUTPUT);  //Definiere die LED (PIN X) als OUTPUT (OUTPUT = Arduino gibt Strom an LED) 
+
 }
+ 
+void loop() { //Der Loop-Bereich wird immer wiederholt solange das Arduino läuft
+  //TODO: Welche PIN Nummer hat der Lichtsensor -> schaue dazu auf dem Sensor-Kit und ersetze unten das X mit der Nummer (inklusive das A)
+  int licht = analogRead(A3); // lese die Werte aus dem Lichtsensor und speichere diese auf der Variable (Wort) Licht ab.
+ 
+ //TODO: Du kannst jetzt oben dein Arduino auswählen und mit dem Pfeil-Symbol den Code auf das Arduino hochladen (Du musst hier nichts schreiben)
 
-void loop()
-{
-  analogWrite(LEDblau, helligkeitBlau); 
-  analogWrite(LEDrot, helligkeitRot); 
-  analogWrite(LEDgruen, helligkeitGruen); 
-  delay(1000);
-  analogWrite(LEDblau, 125); 
-  analogWrite(LEDrot, 300); 
-  analogWrite(LEDgruen, 75); 
+  Serial.print("Helligkeit: "); //Schreibe das Wort Helligkeit: in den Serial Monitor (unten oder oben rechts bei der Lupe öffnen)
+  Serial.println(licht); // Schreibt den Wert, welchen wir in der Variabel "licht" gespeichert haben
+ 
+ //TODO: Öffne den Serial Monitor (oben rechts die Lupe) und schaue welche Werte die Helligkeit hat - Versuche jetzt den Code unten anzupassen, damit deine LED leuchtet wenn es dunkel wird.
+ if (licht < 10) { //wenn der Licht-Wert kleiner ist als 2, dann mache....
+ digitalWrite(LED, HIGH); //schaltet die LED ein
+ }
+ else { //falls das if nicht zutrifft, dann mache...
+ digitalWrite(LED, LOW); //schaltet die LED aus
+ }
+
+  delay(100); // Pause zwischen den Messungen in Millisekunden
+  
 }

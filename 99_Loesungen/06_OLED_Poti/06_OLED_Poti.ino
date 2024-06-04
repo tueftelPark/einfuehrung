@@ -1,35 +1,37 @@
-/*Das Mikrocontroller-Board ist in der Lage, analoge Signale (Spannung) zu messen und diese zu verarbeiten. 
-Dies geschieht mit den analogen Eingängen auf dem Board. Dieser wandelt den gemessenen Spannungswert in eine Zahl um, die dann weiter verarbeitet werden kann. 
-0 Volt entspricht dabei der Zahl 0 und der höchste Messwert 5 Volt entspricht der Zahl 1023 (0 bis 1023 entspricht 1024 Zahlen = 10 Bit).
+/* Befehle:
+WERT = digitalRead(PIN); <- das HIGH oder LOW welches gemessen wurde, speichern wir in der Variable WERT (Achtung WERT muss bei den Variabel noch definiert werden!)
+delay(ZEIT); <- macht eine Pause mit der ZEIT in millisekunden
+analogWrite(PIN, 0 bis 255); <- neben digital gibt es auch analoge Signale. Hier gibt es nicht nur HIGH oder LOW, sondern du kannst eine Zahl von 0 bis 255 einsetzen.
+Oled.begin(); <- Startet die Kommunikation mit dem Display
+Oled.setFlipMode(true oder false); <- Text auf Dsiplay wird entweder normal angezeigt oder auf dem Kopf angezeigt.
+Oled.setFont(Schriftart); <- Legt die Schriftart vom Text fest
+Oled.print("Text"); <- Auf dem Display wird Text angezeigt 
+
 */
 
-int eingang= A0; //Das Wort „eingang“ steht  für den PIN an welchem der Sensor angeschlossen ist
-int LED = 10; //Das Wort „LED“ steht für den PIN an welchem die LED angeschlossen ist
-int sensorWert = 0; //Variable für den Sensorwert mit 0 als Startwert
+#include <Arduino_SensorKit.h>
+
 
 void setup()
 {
-Serial.begin(9600); //Die Kommunikation mit dem seriellen Port wird gestartet. Das benötigt man, um sich den tatsächlich ausgelesenen Wert später im serial monitor anzeigen zu lassen.
-pinMode (LED, OUTPUT); //Der Pin mit der LED (Pin XX) ist jetzt ein Ausgang
-//Der analoge Pin muss nicht definiert werden.
+Oled.begin(); // Startet Kommunikation mit dem Display
+Oled.setFlipMode(true); // Legt die Orientation vom Diasplay fest
+
 }
 
 void loop()
 {
-sensorWert = analogRead(eingang); //Die Spannung an dem Fotowiderstand auslesen und unter der Variable „sensorWert“ abspeichern.
-Serial.print("Sensorwert = " ); //Ausgabe am Serial-Monitor: Das Wort „Sensorwert: „
-Serial.println(sensorWert); //Ausgabe am Serial-Monitor. Mit dem Befehl Serial.print wird der Sensorwert des Fotowiderstandes in Form einer Zahl zwischen 0 und 1023 an den serial monitor gesendet.
-//ln bedeutet Neue Linie - nach diesem Wert wird in eine neue Zeile geschrieben.
+  // TODO: ersetze X mit der nummer für den Drehregler
+  int sensorWert = analogRead(A0);
 
-if (sensorWert > 512 ) //Wenn der Sensorwert über 512 beträgt….
-{
-digitalWrite(LED, HIGH); //…soll die LED leuchten…
+  
+  int prozent = map(sensorWert, 0, 1023, 100, 0); // Rechnet Zahlen zwischen 1 und 1023 in Prozentwerte um.
+  Oled.setFont(u8x8_font_chroma48medium8_r); // Schriftart
+  Oled.setCursor(33, 33);    // Position des Textes auf dem Display
+  Oled.print("Prozent:");   
+  Oled.print(prozent);  // Der Wert welcher unter der Variabel gespeichert ist wird auf dem Display angezeigt.
+  Oled.println("%"); 
+  Oled.refreshDisplay();  // Aktualisiert das Diaplay
+  delay(10); // kurze Wartezeit für ein flüssiges Bild auf dem Display
+  
 }
-
-else //andernfalls…
-{
-digitalWrite(LED, LOW); //….soll sie nicht leuchten.
-}
-delay (50);//Eine kurze Pause, in der die LED an oder aus ist
-}
-

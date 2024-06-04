@@ -14,6 +14,7 @@ pinMode(XX, YY);
 
 void loop() // Hier beginnt das Hauptprogramm
 { 
+//TODO: schalte eine LED ein
 
 //TODO: warte 1 Sekunde //TEST: Verändere die Zeit - was passiert?
 
