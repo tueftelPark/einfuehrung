@@ -10,11 +10,11 @@ analogWrite(PIN, 0 bis 255); <- NEU: neben digital gibt es auch analoge Signale.
 //Zuerst die Variabeln definieren
 
 // TODO: Farbe rot an Pin XXX -> Wichtig nur PWM(~) nutzen! Auf deinem Arduino sind dies die Nummern mit einer kleinen Welle -> z.B. 10~
-int LEDrot = 13; 
+int LEDrot = 11; 
 // TODO: Farbe gruen an Pin XX -> Wichtig nur PWM(~) nutzen! 
-int LEDgruen = 12; 
+int LEDgruen = 10; 
 // TODO: Farbe blau an Pin XX -> Wichtig nur PWM(~) nutzen! 
-int LEDblau = 11; 
+int LEDblau = 9; 
 
 int RotAn = 255; //TEST: Variable für das Einschalten
 int GruenAn = 255; //TEST: Variable für das Einschalten
