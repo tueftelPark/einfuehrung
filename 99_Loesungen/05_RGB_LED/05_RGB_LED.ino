@@ -22,34 +22,53 @@ int BlauAn = 255; //TEST: Variable für das Einschalten
 
 //TODO: Ersetze das Z mit der Zahl zum Ausschalten
 
-int BlauAus = 0; //TEST: Variable für das Ausschalten
 int RotAus = 0; //TEST: Variable für das Ausschalten
 int GruenAus = 0; //TEST: Variable für das Ausschalten
+int BlauAus = 0; //TEST: Variable für das Ausschalten
 
 void setup()
 {
-//TODO: Definiere den Pin für die blaue LED -> Nutze die Variabeln und nicht die PIN-Zahl
-  pinMode(LEDblau, OUTPUT);
+
 //TODO: Definiere den Pin für die rote LED
   pinMode(LEDgruen, OUTPUT);
 //TODO: Definiere den Pin für die grüne LED
   pinMode(LEDrot, OUTPUT); 
+  //TODO: Definiere den Pin für die blaue LED -> Nutze die Variabeln und nicht die PIN-Zahl
+  pinMode(LEDblau, OUTPUT);
 }
 
 void loop()
 {
-  analogWrite(LEDblau, BlauAn); //Jetzt wird der PIN für die blaue LED genommen und die Helligkeit von der Variabel
+  analogWrite(LEDrot, RotAn); //Jetzt wird der PIN für die rote LED genommen und die Helligkeit von der Variabel
   delay(1000);
-  analogWrite(LEDblau, BlauAus);
+  analogWrite(LEDrot, RotAus);
   // TODO: Lasse alle anderen RGB-Farben auch NACHEINANDER leuchten -> Vergiss den delay nicht!
   analogWrite(LEDgruen, GruenAn); 
   delay(1000);
   analogWrite(LEDgruen, GruenAus);
-  analogWrite(LEDrot, RotAn); 
+  analogWrite(LEDblau, BlauAn); 
   delay(1000);
-  analogWrite(LEDrot, RotAus);
+  analogWrite(LEDblau, BlauAus);
   // TODO: Lasse alle Farben gleichzeitig leuchten -> Was passiert?
   analogWrite(LEDblau, BlauAn);
   analogWrite(LEDgruen, GruenAn); 
   analogWrite(LEDrot, RotAn);
+  delay(3000);
+  analogWrite(LEDblau, BlauAus);
+  analogWrite(LEDgruen, GruenAus); 
+  analogWrite(LEDrot, RotAus);
   // TEST: Was passiert wenn du verschiedene Kombinationen gleichzeitig leuchten lässt?
+  analogWrite(LEDblau, BlauAn); 
+  analogWrite(LEDrot, RotAn);
+  delay(3000);
+  analogWrite(LEDblau, BlauAus);
+  analogWrite(LEDrot, RotAus);
+  // TEST: Was passiert, wenn du das 255 mit einer Zahl zwischen 0-255 ersetzt?
+  analogWrite(LEDblau, 125); 
+  analogWrite(LEDrot, 300); 
+  analogWrite(LEDgruen, 75); 
+  delay(3000);
+  analogWrite(LEDblau, BlauAus);
+  analogWrite(LEDrot, RotAus);
+  analogWrite(LEDgruen, GruenAus);
+}

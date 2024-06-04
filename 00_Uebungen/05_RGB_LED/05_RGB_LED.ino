@@ -22,25 +22,25 @@ int BlauAn = 255; //TEST: Variable für das Einschalten
 
 //TODO: Ersetze das Z mit der Zahl zum Ausschalten
 
-int BlauAus = Z; //TEST: Variable für das Ausschalten
 int RotAus = Z; //TEST: Variable für das Ausschalten
 int GruenAus = Z; //TEST: Variable für das Ausschalten
+int BlauAus = Z; //TEST: Variable für das Ausschalten
 
 void setup()
 {
-//TODO: Definiere den Pin für die blaue LED -> Nutze die Variabeln und nicht die PIN-Zahl
-
-//TODO: Definiere den Pin für die rote LED
+//TODO: Definiere den Pin für die rote LED -> Nutze die Variabeln und nicht die PIN-Zahl
 
 //TODO: Definiere den Pin für die grüne LED
+
+//TODO: Definiere den Pin für die blaue LED
   
 }
 
 void loop()
 {
-  analogWrite(LEDblau, BlauAn); //Jetzt wird der PIN für die blaue LED genommen und die Helligkeit von der Variabel
+  analogWrite(LEDrot, RotAn); //Jetzt wird der PIN für die rote LED genommen und die Helligkeit von der Variabel
   delay(1000);
-  analogWrite(LEDblau, BlauAus);
+  analogWrite(LEDrot, RotAus);
   // TODO: Lasse alle anderen RGB-Farben auch NACHEINANDER leuchten -> Vergiss den delay nicht!
 
   
@@ -52,3 +52,5 @@ void loop()
 
   // TEST: Was passiert, wenn du das 255 mit einer Zahl zwischen 0-255 ersetzt?
   
+
+}

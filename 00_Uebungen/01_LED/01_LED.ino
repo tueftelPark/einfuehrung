@@ -14,7 +14,6 @@ pinMode(XX, YY);
 
 void loop() // Hier beginnt das Hauptprogramm
 { 
-if 
 
 //TODO: warte 1 Sekunde //TEST: Verändere die Zeit - was passiert?
 
