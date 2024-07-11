@@ -17,20 +17,20 @@ void setup() // Hier beginnt das Setup
 void loop() // Hier beginnt das Hauptprogramm
 { 
   //TODO: schalte die LED ein
-  digitalWrite(LED, YY);
+  
 
-  // Ersetze XX mit zwei Zahlen. ACHTUNG: Millisekunden
+  //Hier wird unter der Variable Zeit eine zufällige Zahl abgespeichert. Ersetze XX mit zwei Zahlen. ACHTUNG: Millisekunden
   int Zeit = random(XX, XX);
 
   //TODO: warte für das zufällige Zeitintervall
-  delay(Zeit);
+  
 
   //TODO: schalte die LED wieder aus
-  digitalWrite(XX, YY);
+  
 
   //TODO: Ersetze XX mit zwei Zahlen. ACHTUNG: Millisekunden
   int offTime = random(XX, XX);
 
-  //TODO: warte für das zufällige Zeitintervall
-  delay(offTime);
+  //TODO: warte für das zweite zufällige Zeitintervall
+  
 } // Hier endet ein Programmabschnitt

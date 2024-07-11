@@ -32,8 +32,8 @@ void setup()
 pinMode(Taster, INPUT); // Hier nutzen wir das Wort Taster als PIN-Nummer welche oben definiert ist in den Variabeln 
 // und der Taster in ein Input, da wir den Strom messen am PIN
 
-// TODO: Nutze hier die Variabel für den Buzzer und der Buzzer gibt einen Ton aus. Ist es ein INPUT oder OUTPUT?
-pinMode(XX, YY); 
+// TODO: Nutze hier die Variabel für den Buzzer und der Buzzer soll einen Ton ausgeben. Ist es ein INPUT oder OUTPUT?
+
 
 
 }

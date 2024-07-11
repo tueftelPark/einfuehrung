@@ -30,11 +30,11 @@ int BlauAus = Z; //TEST: Variable für das Ausschalten
 
 void setup()
 {
-//TODO: Definiere den Pin für die rote LED -> Nutze die Variabeln und nicht die PIN-Zahl
+//TODO: Definiere den richtigen Pin für die rote LED -> Nutze die Variabeln und nicht die PIN-Zahl
 
-//TODO: Definiere den Pin für die grüne LED
+//TODO: Definiere den richtigen Pin für die grüne LED
 
-//TODO: Definiere den Pin für die blaue LED
+//TODO: Definiere den richtigen Pin für die blaue LED
   
 }
 

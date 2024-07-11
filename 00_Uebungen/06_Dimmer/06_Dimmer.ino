@@ -16,7 +16,7 @@ void setup() // Hier beginnt das Setup
   //TODO: Defiere die Variabeln Rot, Blau und Gruen mit den jeweiligen PIN-Nummern. Erestze XX mit der richtigen Zahl (Du musst die PINs 9, 10 ,11 und GND wählen)
   int Rot = XX
   //TODO: Wiederhole dies für Blau und Gruen
-  int 
+  
 
   //TODO: Rot, Blau und Gruen werden als Ausgang definiert. Ersetze YY mit OUTPUT oder INPUT
   pinMode(Rot, YY); 

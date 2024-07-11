@@ -13,11 +13,11 @@ void setup() // Hier beginnt das Setup
   int Buzzer = XX;
   // Ersetze X mit einer Zahl (inklusive A -> z.B. A7)
   int Poti = AX;
-  //TODO: Der Buzzer wird als Ausgang definiert. Ersetze YY mit INPUT oder OUTPUT.
-  pinMode(Buzzer, YY); 
+  //TODO: Der Buzzer wird als Ausgang definiert. 
+   
 
-  //TODO: Der Pin für den Potentiometer wird als Eingang definiert. Ersetze YY mit INPUT oder OUTPUT.
-  pinMode(Poti, YY);
+  //TODO: Der Pin für den Potentiometer wird als Eingang definiert. 
+  
 } 
 
 void loop() // Hier beginnt das Hauptprogramm
