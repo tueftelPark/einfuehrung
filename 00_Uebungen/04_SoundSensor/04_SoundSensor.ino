@@ -1,7 +1,14 @@
+/* Befehle:
+pinMode(PIN, OUTPUT oder INPUT); <- definiert den PIN (ohne D), OUTPUT gibt Strom und INPUT misst den Strom am PIN
+ZAHL = analogRead(PIN); <- Wert zwischen 0 und 1023 wird am PIN gemessen. Dieser Wert wird unter der Variable "ZAHL" gespeichert.
+delay(ZEIT); <- macht eine Pause mit der ZEIT in millisekunden
+tone(PIN, FREQUENZ); <- erzeugt einen Ton mit einer bestimmten Frequenz am PIN, PIN mit einer Zahl und FREQUENZ mit einer Zahl in Hertz ersetzen
+noTone(PIN); <- stoppt den Ton am PIN, PIN mit einer Zahl ersetzen
+*/
+
 
 //TODO: Welche PIN Nummer hat der Buzzer -> schaue dazu auf dem Sensor-Kit und ersetze unten das X mit der Nummer (ohne das D)
 int BUZZER = X; //Hier speichern wir eine Zahl (der PIN von unserem Buzzer) auf das Wort Buzzer
-
 
 void setup() { //Das Setup wird nur einmal ausgeführt -> Beim Start des Arduinos
 Serial.begin(9600); //Starte die Kommunikation mit dem Serial Monitor

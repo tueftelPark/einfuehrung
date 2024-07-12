@@ -1,12 +1,9 @@
 /* Befehle:
-WERT = digitalRead(PIN); <- das HIGH oder LOW welches gemessen wurde, speichern wir in der Variable WERT (Achtung WERT muss bei den Variabel noch definiert werden!)
-
 Oled.begin(); <- Startet die Kommunikation mit dem Display
 Oled.setFlipMode(true oder false); <- Text auf Dsiplay wird entweder normal angezeigt oder auf dem Kopf angezeigt.
 Oled.setFont(Schriftart); <- Legt die Schriftart vom Text fest
 Oled.print("Text"); <- Auf dem Display wird Text angezeigt 
 Oled.println(); <- Am Ende vom Text wird ein Enter eingefügt, sonst gleich wie Oled.print();
-
 */
 
 #include <Arduino_SensorKit.h>

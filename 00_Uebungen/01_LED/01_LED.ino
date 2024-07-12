@@ -6,8 +6,7 @@ delay(ZEIT); <- macht eine Pause mit der ZEIT in millisekunden
 
 void setup() // Hier beginnt das Setup
 { 
-pinMode(4, INPUT); //Beim Button wird Strom gemessen.
-//TODO: Pin XX wird als Ausgang definiert - XX mit der Zahl für die LED auf dem SensorKit ersetzen (ohne D), YY mit OUTPUT oder INPUT ersetzen
+//TODO: Definiere den PIN (an dem die LED angeschlossen ist) als Ausgang. XX mit der Zahl für die LED ersetzen (ohne D), YY mit OUTPUT oder INPUT ersetzen
 pinMode(XX, YY); 
 
 } // Hier endet ein Programmabschnitt

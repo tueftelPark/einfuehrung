@@ -4,15 +4,20 @@ analogRead(PIN); <- liest den Wert eines analogen Pins, PIN mit einer Zahl erset
 tone(PIN, FREQUENZ); <- erzeugt einen Ton mit einer bestimmten Frequenz am PIN, PIN mit einer Zahl und FREQUENZ mit einer Zahl in Hertz ersetzen
 noTone(PIN); <- stoppt den Ton am PIN, PIN mit einer Zahl ersetzen
 delay(ZEIT); <- macht eine Pause mit der ZEIT in Millisekunden
+
+map(WERT, VON_MIN, VON_MAX, NACH_MIN, NACH_MAX); <- ändert den Bereich eines Wertes von einem Bereich auf einen anderen 
+-> WERT ist der zu ändernde Wert, VON_MIN und VON_MAX sind der alte Bereich, NACH_MIN und NACH_MAX sind der neue Bereich
 */
+
+
+  //TODO: Ersetze XX mit einer Zahl (ohne D) -> Die Zahl wird jetzt unter der Variable Buzzer abgespeichert.
+  int Buzzer = XX;
+  //TODO: Ersetze X mit einer Zahl (inklusive A -> z.B. A7)
+  int Poti = AX;
+
 
 void setup() // Hier beginnt das Setup
 { 
-
-  // Ersetze XX mit einer Zahl (ohne D) -> Die Zahl wird jetzt unter der Variable Buzzer abgespeichert.
-  int Buzzer = XX;
-  // Ersetze X mit einer Zahl (inklusive A -> z.B. A7)
-  int Poti = AX;
   //TODO: Der Buzzer wird als Ausgang definiert. 
    
 
@@ -25,8 +30,8 @@ void loop() // Hier beginnt das Hauptprogramm
   //TODO: Definiere die Variable sensorWert und diese liest den Wert vom Potentiometer. Ersetze XX mit der Variable für den Buzzer
   int sensorWert = analogRead(XX); 
 
-  //Mappe den Sensorwert (0-1023) auf eine Frequenz (200-2000 Hz) -> Die Frequenz ergibt die Tonhöhe
-  int frequenz = map(sensorWert, 0, 1023, 200, 2000);
+  //Mappe den Sensorwert (0-1023) auf eine Frequenz (100-2000 Hz) -> Die Frequenz ergibt die Tonhöhe
+  int frequenz = map(sensorWert, 0, 1023, 100, 2000);
 
   //TODO: Erzeuge einen Ton für 1 Sekunde. Ersetze XX mit der entsprechenden Zahl.
   tone(Buzzer, frequenz);
@@ -34,6 +39,6 @@ void loop() // Hier beginnt das Hauptprogramm
   //TODO: stoppe den Ton beim Buzzer (nutze die Variable und nicht die Zahl!)
   
 
-  //TODO: Warte 5 Sekunden, bevor das Programm neu startet
+  //TODO: Warte 3 Sekunden, bevor das Programm neu startet
   
 } 

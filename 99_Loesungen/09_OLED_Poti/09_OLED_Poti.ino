@@ -1,12 +1,14 @@
 /* Befehle:
-WERT = digitalRead(PIN); <- das HIGH oder LOW welches gemessen wurde, speichern wir in der Variable WERT (Achtung WERT muss bei den Variabel noch definiert werden!)
 delay(ZEIT); <- macht eine Pause mit der ZEIT in millisekunden
-analogWrite(PIN, 0 bis 255); <- neben digital gibt es auch analoge Signale. Hier gibt es nicht nur HIGH oder LOW, sondern du kannst eine Zahl von 0 bis 255 einsetzen.
+ZAHL = analogRead(PIN); <- Wert zwischen 0 und 1023 wird am PIN gemessen. Dieser Wert wird unter der Variable "ZAHL" gespeichert.
+map(WERT, VON_MIN, VON_MAX, NACH_MIN, NACH_MAX); <- ändert den Bereich eines Wertes von einem Bereich auf einen anderen 
+-> WERT ist der zu ändernde Wert, VON_MIN und VON_MAX sind der alte Bereich, NACH_MIN und NACH_MAX sind der neue Bereich
+
 Oled.begin(); <- Startet die Kommunikation mit dem Display
 Oled.setFlipMode(true oder false); <- Text auf Dsiplay wird entweder normal angezeigt oder auf dem Kopf angezeigt.
 Oled.setFont(Schriftart); <- Legt die Schriftart vom Text fest
 Oled.print("Text"); <- Auf dem Display wird Text angezeigt 
-
+Oled.println(); <- Am Ende vom Text wird ein Enter eingefügt, sonst gleich wie Oled.print();
 */
 
 #include <Arduino_SensorKit.h>
@@ -14,7 +16,11 @@ Oled.print("Text"); <- Auf dem Display wird Text angezeigt
 
 void setup()
 {
-Oled.begin(); // Startet Kommunikation mit dem Display
+
+// TODO: Starte die Kommunikation mit dem Display
+Oled.begin();
+
+// TEST: Was passiert wenn du true mit false ersetzt?
 Oled.setFlipMode(true); // Legt die Orientation vom Diasplay fest
 
 }

@@ -8,29 +8,35 @@ map(WERT, VON_MIN, VON_MAX, NACH_MIN, NACH_MAX); <- ändert den Bereich eines We
 -> WERT ist der zu ändernde Wert, VON_MIN und VON_MAX sind der alte Bereich, NACH_MIN und NACH_MAX sind der neue Bereich
 */
 
+
   //TODO: Definiere Poti mit der ensprechenden AX Nummer auf dem Sensor Kit. Ersetze X mit einer Zahl (A inkulsive -> z.B. A7)
-  int Poti = AX;
+  int Poti = A0;
 
   //TODO: Defiere die Variabeln Rot, Blau und Gruen mit den jeweiligen PIN-Nummern. Erestze XX mit der richtigen Zahl (Du musst die PINs 9, 10 ,11 und GND wählen)
-  int Rot = XX;
+  int Rot = 11;
   //TODO: Wiederhole dies für Blau und Gruen
-  
+  int Blau = 10;
+  int Gruen = 9;
+
 
 void setup() // Hier beginnt das Setup
 { 
   //TODO: Rot, Blau und Gruen werden als Ausgang definiert. Ersetze YY mit OUTPUT oder INPUT
-  pinMode(Rot, YY); 
+  pinMode(Rot, OUTPUT); 
   //TODO: definiere die weiteren Farben (Nutze die Variabeln)
-
+  pinMode(Gruen, OUTPUT); 
+  pinMode(Blau, OUTPUT); 
 
   //TODO: Der Potentiometer wird als Eingang definiert. 
-  
+  pinMode(Poti, INPUT);
+
 } 
 
 void loop() // Hier beginnt das Hauptprogramm
 { 
   //TODO: Definiert die Variable sensorWert und liest den Wert vom Potentiometer. Ersetze YY mit der richtigen Variabel.
-  int sensorWert = analogRead(YY); 
+  int sensorWert = analogRead(Poti); 
+
 
   //Mappe den Sensorwert (0-1023) auf einen PWM-Wert (0-255)
   //Der Potentiometer gibt zahlen zwischen 0 und 1023 aus diese werden umgerechnet da die LED nur mit Zahlen zwischen 0 und 255 arbeiten kann.
@@ -43,8 +49,10 @@ void loop() // Hier beginnt das Hauptprogramm
   //Setze alle Farbkanäle der RGB-LED auf den gleichen Wert, um weißes Licht zu erzeugen
   analogWrite(Rot, helligkeit); // Rot
   //TODO: Wiederhole dies mit den weiteren zwei Farben
+  analogWrite(Gruen, helligkeit);
+  analogWrite(Blau, helligkeit);
 
-
-  //TODO: Warte 100 Millisekunden, bevor das Programm neu startet
   
+  //TODO: Warte 100 Millisekunden, bevor das Programm neu startet
+  delay(100);
 } 

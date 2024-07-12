@@ -1,6 +1,13 @@
+/* Befehle:
+pinMode(PIN, OUTPUT oder INPUT); <- definiert den PIN (ohne D), OUTPUT gibt Strom und INPUT misst den Strom am PIN
+ZAHL = analogRead(PIN); <- Wert zwischen 0 und 1023 wird am PIN gemessen. Dieser Wert wird unter der Variable "ZAHL" gespeichert.
+digitalWrite (PIN, HIGH oder LOW); <- schaltet etwas EIN (HIGH) oder AUS (LOW) - PIN mit der Zahl auf dem SensorKit ersetzen (ohne D), dann HIGH oder LOW
+delay(ZEIT); <- macht eine Pause mit der ZEIT in millisekunden
+*/
+
 
 //TODO: Welche PIN Nummer hat die LED -> schaue dazu auf dem Sensor-Kit und ersetze unten das X mit der Nummer (ohne das D)
-int LED = X; //Hier speichern wir eine Zahl (der PIN von unserer LED) auf das Wort LED (LED ist die Variabel)
+int LED = 6; //Hier speichern wir eine Zahl (der PIN von unserer LED) auf das Wort LED (LED ist die Variabel)
 
 void setup() { //Das Setup wird nur einmal ausgeführt -> Beim Start des Arduinos
 Serial.begin(9600); //Starte die Kommunikation mit dem Serial Monitor
@@ -18,7 +25,7 @@ void loop() { //Der Loop-Bereich wird immer wiederholt solange das Arduino läuf
   Serial.println(licht); // Schreibt den Wert, welchen wir in der Variabel "licht" gespeichert haben
  
  //TODO: Öffne den Serial Monitor (oben rechts die Lupe) und schaue welche Werte die Helligkeit hat - Versuche jetzt den Code unten anzupassen, damit deine LED leuchtet wenn es dunkel wird.
- if (licht < 10) { //wenn der Licht-Wert kleiner ist als 2, dann mache....
+ if (licht < 3) { //wenn der Licht-Wert kleiner ist als 2, dann mache....
  digitalWrite(LED, HIGH); //schaltet die LED ein
  }
  else { //falls das if nicht zutrifft, dann mache...
