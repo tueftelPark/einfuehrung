@@ -13,7 +13,7 @@ int LEDrot = XX;
 // TODO: Farbe gruen an Pin XX -> Wichtig nur PWM(~) nutzen! 
 int LEDgruen = XX; 
 // TODO: Farbe blau an Pin XX -> Wichtig nur PWM(~) nutzen! 
-int LEDblau = XX; 
+
 
 int RotAn = 255; //TEST: Variable für das Einschalten
 int GruenAn = 255; //TEST: Variable für das Einschalten

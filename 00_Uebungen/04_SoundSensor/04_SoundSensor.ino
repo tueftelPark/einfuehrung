@@ -1,7 +1,7 @@
 /* Befehle:
 pinMode(PIN, OUTPUT oder INPUT); <- definiert den PIN (ohne D), OUTPUT gibt Strom und INPUT misst den Strom am PIN
-ZAHL = analogRead(PIN); <- Wert zwischen 0 und 1023 wird am PIN gemessen. Dieser Wert wird unter der Variable "ZAHL" gespeichert.
-delay(ZEIT); <- macht eine Pause mit der ZEIT in millisekunden
+ZAHL = analogRead(PIN); <- Zahlenwert wird am PIN gemessen. Dieser Wert wird unter der Variable "ZAHL" gespeichert.
+delay(ZEIT); <- macht eine Pause mit der ZEIT in Millisekunden
 tone(PIN, FREQUENZ); <- erzeugt einen Ton mit einer bestimmten Frequenz am PIN, PIN mit einer Zahl und FREQUENZ mit einer Zahl in Hertz ersetzen
 noTone(PIN); <- stoppt den Ton am PIN, PIN mit einer Zahl ersetzen
 */
@@ -17,14 +17,16 @@ pinMode(BUZZER,OUTPUT);  //Definiert den Buzzer (PIN X) als OUTPUT (OUTPUT = Ard
 }
  
 void loop() { //Der Loop-Bereich wird immer wiederholt solange das Arduino läuft
+
   //TODO: Welche PIN Nummer hat der Geräuschsensor -> schaue dazu auf dem Sensor-Kit und ersetze unten das X mit der Nummer (inklusive das A)
-  int sound = analogRead(AX); // lese die Werte aus dem Geräuschsensor und speichere diese auf der Variable (Wort) Licht ab.
+  int sound = analogRead(AX); // lese die Werte aus dem Geräuschsensor und speichere diese auf der Variable (Wort) sound ab.
  
  //TODO: Du kannst jetzt oben dein Arduino auswählen und mit dem Pfeil-Symbol (upload) den Code auf das Arduino hochladen (Du musst hier nichts schreiben)
 
   Serial.println(sound); //print the value of sound sensor
  
- //TODO: Öffne den Serial Monitor (oben rechts die Lupe) und schaue welche Werte der Sound hat - Versuche jetzt den Code unten anzupassen, damit deine LED leuchtet wenn es dunkel wird.
+ //TODO: Öffne den Serial Monitor (oben rechts die Lupe) und schaue welche Werte der Sound hat 
+ //TODO: -> Versuche jetzt den Code unten anzupassen, damit der Buzzer abgeht wenns laut ist.
  if (sound > 3000) { //wenn der Sound-Wert grösser ist als 3000, dann mache....
 
  //TEST:Ändere die Zahl hinter BUZZER und schaue was passiert

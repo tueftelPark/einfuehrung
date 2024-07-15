@@ -32,7 +32,7 @@ void setup()
 pinMode(Taster, INPUT); // Hier nutzen wir das Wort Taster als PIN-Nummer welche oben definiert ist in den Variabeln 
 // und der Taster in ein Input, da wir den Strom messen am PIN
 
-// TODO: Nutze hier die Variabel für den Buzzer und der Buzzer soll einen Ton ausgeben. Ist es ein INPUT oder OUTPUT?
+// TODO: Definiere den PIN für den Buzzer. Nutze hier die Variabel! Ist es INPUT oder OUTPUT?
 
 
 
@@ -40,14 +40,15 @@ pinMode(Taster, INPUT); // Hier nutzen wir das Wort Taster als PIN-Nummer welche
 
 void loop()
 {
-Tasterstatus = digitalRead(Taster); // hier lesen wir den PIN aus mit digitalRead(PIN) und speichern den Wert in Tasterstatus
-//NEU: Wir lernen if/else - wenn das passiert mache das (if) und anonsten das andere (else)
+Tasterstatus = digitalRead(Taster); // hier lesen wir am PIN mit digitalRead(PIN) einen Wert aus 
+//Der Wert wird unter Tasterstatus abgespeichert.
+
+//NEU: Wir lernen if & else - wenn das passiert mache das (if) und anonsten das andere (else)
 if (Tasterstatus == HIGH) // Wenn der Taster gedrückt ist... also wenn der PIN Strom bekommt, dann ist das Signal HIGH
 {
 tone(Buzzer, 300); // …spiele diesen Ton... //TEST: Verändere die Zahl in diesem Befehel - was passiert?
   
 //TODO: Füge hier eine Pause mit der Länge "Spielzeit" ein. Nutze die Variabel nicht die Zahl.
-
 
 noTone(Buzzer); // Ton abschalten
 }

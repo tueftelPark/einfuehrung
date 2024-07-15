@@ -20,7 +20,7 @@ void setup() // Hier beginnt das Setup
 { 
   //TODO: Rot, Blau und Gruen werden als Ausgang definiert. Ersetze YY mit OUTPUT oder INPUT
   pinMode(Rot, YY); 
-  //TODO: definiere die weiteren Farben (Nutze die Variabeln)
+  //TODO: definiere die weiteren Farben als Ausgang (Nutze die Variabeln)
 
 
   //TODO: Der Potentiometer wird als Eingang definiert. 
