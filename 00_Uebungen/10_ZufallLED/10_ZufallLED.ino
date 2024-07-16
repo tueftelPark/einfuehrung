@@ -19,7 +19,7 @@ void loop() // Hier beginnt das Hauptprogramm
   //TODO: schalte die LED ein
   
 
-  //Hier wird unter der Variable Zeit eine zufällige Zahl abgespeichert. Ersetze XX mit zwei Zahlen. ACHTUNG: Millisekunden
+  //TODO: Hier wird unter der Variable Zeit eine zufällige Zahl abgespeichert. Ersetze XX mit zwei Zahlen. ACHTUNG: Millisekunden
   int ZeitEin = random(XX, XX);
 
   //TODO: warte für das zufällige Zeitintervall
