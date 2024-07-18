@@ -15,9 +15,9 @@ int LEDgruen = XX;
 // TODO: Farbe blau an Pin XX -> Wichtig nur PWM(~) nutzen! 
 
 
-int RotAn = 255; //TEST: Variable für das Einschalten
-int GruenAn = 255; //TEST: Variable für das Einschalten
-int BlauAn = 255; //TEST: Variable für das Einschalten
+int RotHelligkeit = 255; //TEST: Variable für das Einschalten
+int GruenHelligkeit = 255; //TEST: Variable für das Einschalten
+int BlauHelligkeit = 255; //TEST: Variable für das Einschalten
 
 //TODO: Ersetze das Z mit der Zahl zum Ausschalten
 

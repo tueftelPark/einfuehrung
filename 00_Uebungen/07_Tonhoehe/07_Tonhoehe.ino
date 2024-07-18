@@ -30,8 +30,8 @@ void loop() // Hier beginnt das Hauptprogramm
   //TODO: Definiere die Variable sensorWert und diese liest den Wert vom Potentiometer. Ersetze XX mit der Variable für den Buzzer
   int sensorWert = analogRead(XX); 
 
-  //Mappe den Sensorwert (0-1023) auf eine Frequenz (100-2000 Hz) -> Die Frequenz ergibt die Tonhöhe
-  int frequenz = map(sensorWert, 0, 1023, 100, 2000);
+  //Mappe den Sensorwert (0-1023) auf eine Frequenz (100-2000 Hz) -> Die Frequenz ergibt die Tonhöhe 
+  int frequenz = map(sensorWert, 0, 1023, 100, 2000); //ohne map einfach 0-1023 als tonhöhe wählen
 
   //TODO: Erzeuge einen Ton für 1 Sekunde. Ersetze XX mit der entsprechenden Zahl.
   tone(Buzzer, frequenz);

@@ -38,7 +38,7 @@ void loop() // Hier beginnt das Hauptprogramm
   //  500:1023 = 0.4888 -> 0.4888*255 = 124.6334
   //Der Wert 124.6334 wird an die LED weitergegeben (Die LED ist ca. bei 50% Helligkeit)
 
-  int helligkeit = map(sensorWert, 0, 1023, 0, 255);
+  int helligkeit = map(sensorWert, 0, 1023, 0, 255); //:4 als int speichern ergibt 255
 
   //Setze alle Farbkanäle der RGB-LED auf den gleichen Wert, um weißes Licht zu erzeugen
   analogWrite(Rot, helligkeit); // Rot

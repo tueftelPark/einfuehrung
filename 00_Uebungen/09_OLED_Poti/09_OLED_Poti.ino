@@ -40,4 +40,4 @@ void loop()
   Oled.refreshDisplay();  // Aktualisiert das Diaplay
   delay(10); // kurze Wartezeit für ein flüssiges Bild auf dem Display
   
-}
+} //irgendwas zeichnen textart? -> weiterführung mit if, else mit sensor (laut -> bild anzeigen)
