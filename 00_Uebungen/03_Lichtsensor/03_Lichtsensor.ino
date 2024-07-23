@@ -11,7 +11,9 @@ int LED = X; //Hier speichern wir eine Zahl (der PIN von unserer LED) auf das Wo
 
 void setup() { //Das Setup wird nur einmal ausgeführt -> Beim Start des Arduinos
 Serial.begin(9600); //Starte die Kommunikation mit dem Serial Monitor
-pinMode(LED, OUTPUT);  //Definiere die LED (PIN X) als OUTPUT (OUTPUT = Arduino gibt Strom an LED) 
+
+//TODO: Definiere den PIN für die LED. Nutze hier die Variabel! Ist es INPUT oder OUTPUT?
+
 
 }
  

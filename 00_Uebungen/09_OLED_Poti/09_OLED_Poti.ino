@@ -8,7 +8,7 @@ Oled.begin(); <- Startet die Kommunikation mit dem Display
 Oled.setFlipMode(true oder false); <- Text auf Dsiplay wird entweder normal angezeigt oder auf dem Kopf angezeigt.
 Oled.setFont(Schriftart); <- Legt die Schriftart vom Text fest
 Oled.print("Text"); <- Auf dem Display wird Text angezeigt 
-Oled.println(); <- Am Ende vom Text wird ein Enter eingefügt, sonst gleich wie Oled.print();
+Oled.println("Text"); <- Am Ende vom Text wird ein Enter eingefügt, sonst gleich wie Oled.print();
 */
 
 #include <Arduino_SensorKit.h>
@@ -31,7 +31,7 @@ void loop()
   int sensorWert = analogRead(AX);
 
   
-  int prozent = map(sensorWert, 0, 1023, 100, 0); // Rechnet Zahlen zwischen 1 und 1023 in Prozentwerte um.
+  int prozent = sensorWert/10.23; //Der sensorWert wird in eine Zahl zwischen 0-100 umgerechnet
   Oled.setFont(u8x8_font_chroma48medium8_r); // Schriftart
   Oled.setCursor(33, 33);    // Position des Textes auf dem Display
   Oled.print("Prozent:");   
@@ -40,4 +40,4 @@ void loop()
   Oled.refreshDisplay();  // Aktualisiert das Diaplay
   delay(10); // kurze Wartezeit für ein flüssiges Bild auf dem Display
   
-} //irgendwas zeichnen textart? -> weiterführung mit if, else mit sensor (laut -> bild anzeigen)
+} /

@@ -12,7 +12,9 @@ int BUZZER = X; //Hier speichern wir eine Zahl (der PIN von unserem Buzzer) auf 
 
 void setup() { //Das Setup wird nur einmal ausgeführt -> Beim Start des Arduinos
 Serial.begin(9600); //Starte die Kommunikation mit dem Serial Monitor
-pinMode(BUZZER,OUTPUT);  //Definiert den Buzzer (PIN X) als OUTPUT (OUTPUT = Arduino gibt Strom an LED) 
+
+//TODO: Definiere den PIN für den Buzzer. Nutze hier die Variabel! Ist es INPUT oder OUTPUT?
+
 
 }
  

@@ -27,7 +27,7 @@ int BlauAus = Z; //TEST: Variable für das Ausschalten
 
 void setup()
 {
-//TODO: Definiere den richtigen Pin für die rote LED -> Nutze die Variabeln und nicht die PIN-Zahl
+//TODO: Definiere den richtigen Pin für die rote LED (INPUT oder OUTPUT?)
 
 //TODO: Definiere den richtigen Pin für die grüne LED
 
@@ -37,7 +37,7 @@ void setup()
 
 void loop()
 {
-  analogWrite(LEDrot, RotAn); //Jetzt wird der PIN für die rote LED genommen und die Helligkeit von der Variabel
+  analogWrite(LEDrot, RotHelligkeit); //Jetzt wird der PIN für die rote LED genommen und die Helligkeit von der Variabel
   delay(1000);
   analogWrite(LEDrot, RotAus);
   // TODO: Lasse alle anderen RGB-Farben auch NACHEINANDER leuchten -> Vergiss den delay nicht!
@@ -46,10 +46,13 @@ void loop()
   // TODO: Lasse alle Farben gleichzeitig leuchten -> Was passiert?
   
 
-  // TEST: Was passiert wenn du verschiedene Kombinationen gleichzeitig leuchten lässt?
+  // TODO: Lasse Rot und Grün gleichzeitig leuchten -> Was passiert?
 
 
-  // TEST: Was passiert, wenn du das 255 mit einer Zahl zwischen 0-255 ersetzt?
+  // TEST: Was passiert, wenn du die Helligkeit mit einer Zahl zwischen 0-255 ersetzt? 
+  
+  
+  //TEST: Was passiert wenn alle Farben verschiedene Zahlen haben?
   
 
 }

@@ -4,9 +4,6 @@ analogRead(PIN); <- liest den Wert eines analogen Pins, PIN mit einer Zahl erset
 tone(PIN, FREQUENZ); <- erzeugt einen Ton mit einer bestimmten Frequenz am PIN, PIN mit einer Zahl und FREQUENZ mit einer Zahl in Hertz ersetzen
 noTone(PIN); <- stoppt den Ton am PIN, PIN mit einer Zahl ersetzen
 delay(ZEIT); <- macht eine Pause mit der ZEIT in Millisekunden
-
-map(WERT, VON_MIN, VON_MAX, NACH_MIN, NACH_MAX); <- ändert den Bereich eines Wertes von einem Bereich auf einen anderen 
--> WERT ist der zu ändernde Wert, VON_MIN und VON_MAX sind der alte Bereich, NACH_MIN und NACH_MAX sind der neue Bereich
 */
 
 
@@ -27,16 +24,16 @@ void setup() // Hier beginnt das Setup
 
 void loop() // Hier beginnt das Hauptprogramm
 { 
-  //TODO: Definiere die Variable sensorWert und diese liest den Wert vom Potentiometer. Ersetze XX mit der Variable für den Buzzer
-  int sensorWert = analogRead(XX); 
+  //TODO: Definiere die Variable sensorWert und diese liest den Wert vom Potentiometer. Ersetze YY mit der Variable für den Buzzer
+  int sensorWert = analogRead(YY); 
 
-  //Mappe den Sensorwert (0-1023) auf eine Frequenz (100-2000 Hz) -> Die Frequenz ergibt die Tonhöhe 
-  int frequenz = map(sensorWert, 0, 1023, 100, 2000); //ohne map einfach 0-1023 als tonhöhe wählen
+  //Der sensorWer wird als Tonhöhe für den Buzzer genommen
+  int frequenz = sensorWert
 
   //TODO: Erzeuge einen Ton für 1 Sekunde. Ersetze XX mit der entsprechenden Zahl.
   tone(Buzzer, frequenz);
   delay(XX);
-  //TODO: stoppe den Ton beim Buzzer (nutze die Variable und nicht die Zahl!)
+  //TODO: stoppe den Ton beim Buzzer.
   
 
   //TODO: Warte 3 Sekunden, bevor das Programm neu startet
