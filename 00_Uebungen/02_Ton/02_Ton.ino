@@ -1,9 +1,9 @@
 /* Befehle:
-pinMode(PIN, OUTPUT oder INPUT); <- definiert den PIN (ohne D), OUTPUT gibt Strom und INPUT misst den Strom am PIN
+pinMode(PIN, OUTPUT oder INPUT); <- definiert den PIN(wo das Objekt angeschlossen), PIN mit der Zahl auf dem SensorKit ersetzen (ohne D), INPUT(Sensor/Signaleingang) OUTPUT(Aktor/Signalausgang)
 WERT = digitalRead(PIN); <- das HIGH oder LOW welches gemessen wurde, speichern wir in der Variable WERT (Achtung WERT muss bei den Variabel noch definiert werden!)
 tone(PIN, FREQUENZ); <- erzeugt einen Ton mit einer bestimmten Frequenz am PIN, PIN mit einer Zahl und FREQUENZ mit einer Zahl in Hertz ersetzen
 noTone(PIN); <- stoppt den Ton am PIN, PIN mit einer Zahl ersetzen
-delay(ZEIT); <- macht eine Pause mit der ZEIT in millisekunden
+delay(ZEIT); <- macht eine Pause mit der ZEIT in Millisekunden
 */
 
 //Die Erzeugung des Tones basiert massgeblich auf dem Befehl „tone(x, y)“, 
@@ -17,13 +17,13 @@ der Taster angeschlossen ist.
 
 //Definiere zuerst die Variabeln
 //TODO: PIN-Nummer für den Button auf dem SensorKit (ohne D)
-int Taster = XX ; 
+int Taster = ? ; 
 //TODO: PIN-Nummer für den Buzzer auf dem SensorKit (ohne D) - muss mit Zahl ergänzt werden - der Buzzer ist der kleine schwarze "Lautsprecher"
-int Buzzer = XX; 
+int Buzzer = ? ; 
 //TODO: Millisekunden anpassen. hier definieren wir die Zeit im Befehl delay(ZEIT) - den kennst du noch von der LED Übung! 
-int Spielzeit = XX; 
+int Spielzeit = ???? ; 
 
-int Tasterstatus=0; // nicht ändern. Dies ist ein Startwert und wird definiert damit das Arduino weiss, dass es sich im eine Zahl handelt.
+int Tasterstatus=0; // nicht ändern. Dies ist ein Startwert und wird definiert damit das Arduino weiss, dass es sich um eine Zahl handelt.
 
 
 void setup()
