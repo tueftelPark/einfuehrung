@@ -27,8 +27,8 @@ void loop()
   // TEST: Was passiert, wenn du die Zahlen änderst?
   Oled.setCursor(33, 33);    // Position des Textes auf dem Display
 
-  // TODO: Ersetze YY mit deinem eigenen Text. (Lass " " stehen!) -> Falls du mehr als eine Zeile schreiben willst, nutze Oled.println(;)
-  Oled.print("YY");   
+  // TODO: Ersetze ?? mit deinem eigenen Text. (Lass " " stehen!) -> Falls du mehr als eine Zeile schreiben willst, nutze Oled.println(""); Maximal 15 Zeichen pro Zeile!
+  Oled.print("??");   
 
 
   Oled.refreshDisplay();  // Aktualisiert das Diaplay
