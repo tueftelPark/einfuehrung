@@ -1,13 +1,13 @@
 /* Befehle:
-pinMode(PIN, OUTPUT oder INPUT); <- definiert den PIN, OUTPUT gibt Strom und INPUT misst den Strom am PIN, PIN mit der Zahl auf dem SensorKit ersetzen (ohne D)
+pinMode(PIN, OUTPUT oder INPUT); <- definiert den PIN(wo das Objekt angeschlossen), PIN mit der Zahl auf dem SensorKit ersetzen (ohne D), INPUT(Sensor/Signaleingang) OUTPUT(Aktor/Signalausgang) 
 digitalWrite (PIN, HIGH oder LOW); <- schaltet etwas EIN (HIGH) oder AUS (LOW) - PIN mit der Zahl auf dem SensorKit ersetzen (ohne D), dann HIGH oder LOW
-delay(ZEIT); <- macht eine Pause mit der ZEIT in millisekunden
+delay(ZEIT); <- macht eine Pause mit der ZEIT in Millisekunden
 */
 
 void setup() // Hier beginnt das Setup
 { 
-//TODO: Definiere den PIN (an dem die LED angeschlossen ist) als Ausgang. XX mit der Zahl für die LED ersetzen (ohne D), YY mit OUTPUT oder INPUT ersetzen
-pinMode(XX, YY); 
+//TODO: Definiere den PIN (an dem die LED angeschlossen ist) als Ausgang. PIN mit der Zahl für die LED ersetzen (ohne D), OUTPUT oder INPUT entscheiden
+pinMode(PIN, OUTPUT oder INPUT); 
 
 } // Hier endet ein Programmabschnitt
 
