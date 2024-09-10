@@ -10,27 +10,27 @@ delay(ZEIT); <- macht eine Pause mit der ZEIT in millisekunden
 //wobei der x-Wert den Pin angibt, an dem der Lautsprecher mit der positiven Seite angeschlossen ist und der y-Wert, der die Tonhöhe angibt.
 
 /*-> NEU: Wir lernen Variabeln! Eine Variabel ist ein Wort welche wir anstelle einer Zahl verwenden können
-mit int sagen wir dem Arduino, dass es sich um eine Zahl handelt. int Taster = 6; bedeutet wir geben dem Wort Taster die Zahl 6.
-Jedes Mal wenn wir das Wort Taster nutzen, dann nimmt das Arduino die Zahl 6. In unserem Fall ist die Zahl 6 der PIN an welchem
-der Taster angeschlossen ist.
+mit int sagen wir dem Arduino, dass es sich um eine Zahl handelt. int Button = 6; bedeutet wir geben dem Wort Button die Zahl 6.
+Jedes Mal wenn wir das Wort Button nutzen, dann nimmt das Arduino die Zahl 6. In unserem Fall ist die Zahl 6 der PIN an welchem
+der Button angeschlossen ist.
 */
 
 //Definiere zuerst die Variabeln
 //TODO: PIN-Nummer für den Button auf dem SensorKit (ohne D)
-int Taster = XX ; 
+int Button = XX ; 
 //TODO: PIN-Nummer für den Buzzer auf dem SensorKit (ohne D) - muss mit Zahl ergänzt werden - der Buzzer ist der kleine schwarze "Lautsprecher"
 int Buzzer = XX; 
 //TODO: Millisekunden anpassen. hier definieren wir die Zeit im Befehl delay(ZEIT) - den kennst du noch von der LED Übung! 
 int Spielzeit = XX; 
 
-int Tasterstatus=0; // nicht ändern. Dies ist ein Startwert und wird definiert damit das Arduino weiss, dass es sich im eine Zahl handelt.
+int Buttonstatus=0; // nicht ändern. Dies ist ein Startwert und wird definiert damit das Arduino weiss, dass es sich im eine Zahl handelt.
 
 
 void setup()
 {
 
-pinMode(Taster, INPUT); // Hier nutzen wir das Wort Taster als PIN-Nummer welche oben definiert ist in den Variabeln 
-// und der Taster in ein Input, da wir den Strom messen am PIN
+pinMode(Button, INPUT); // Hier nutzen wir das Wort Button als PIN-Nummer welche oben definiert ist in den Variabeln 
+// und der Button in ein Input, da wir den Strom messen am PIN
 
 // TODO: Definiere den PIN für den Buzzer. Nutze hier die Variabel! Ist es INPUT oder OUTPUT?
 
@@ -40,11 +40,11 @@ pinMode(Taster, INPUT); // Hier nutzen wir das Wort Taster als PIN-Nummer welche
 
 void loop()
 {
-Tasterstatus = digitalRead(Taster); // hier lesen wir am PIN mit digitalRead(PIN) einen Wert aus 
-//Der Wert wird unter Tasterstatus abgespeichert.
+Buttonstatus = digitalRead(Button); // hier lesen wir am PIN mit digitalRead(PIN) einen Wert aus 
+//Der Wert wird unter Buttonstatus abgespeichert.
 
 //NEU: Wir lernen if & else - wenn das passiert mache das (if) und anonsten das andere (else)
-if (Tasterstatus == HIGH) // Wenn der Taster gedrückt ist... also wenn der PIN Strom bekommt, dann ist das Signal HIGH
+if (Buttonstatus == HIGH) // Wenn der Button gedrückt ist... also wenn der PIN Strom bekommt, dann ist das Signal HIGH
 {
 tone(Buzzer, 300); // …spiele diesen Ton... //TEST: Verändere die Zahl in diesem Befehel - was passiert?
   
@@ -55,7 +55,7 @@ noTone(Buzzer); // Ton abschalten
 else {
   // wenn nichts gedrückt wird, mache nichts
   // hier musst du nichts ergänzen
-  //TEST: Falls du möchtest kannst du hier etwas programmieren - was soll passieren wenn der Taster nicht gedrückt wird? 
+  //TEST: Falls du möchtest kannst du hier etwas programmieren - was soll passieren wenn der Button nicht gedrückt wird? 
   //TEST: Leuchtet eine LED? Du darfst dein Wissen von Übung 1 und 2 auch hier anwenden
 }
 }
