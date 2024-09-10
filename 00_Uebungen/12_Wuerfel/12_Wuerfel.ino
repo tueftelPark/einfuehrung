@@ -1,15 +1,16 @@
 #include "Arduino_SensorKit.h"
 
 /* Befehle:
-pinMode(PIN, OUTPUT oder INPUT); <- definiert den PIN, OUTPUT gibt Strom und INPUT misst den Strom am PIN, PIN mit der Zahl auf dem SensorKit ersetzen (ohne D)
+pinMode(PIN, OUTPUT oder INPUT); <- definiert den PIN(wo ist das Objekt angeschlossen), PIN mit der Zahl auf dem SensorKit ersetzen (ohne D), INPUT(Sensor/Signaleingang) OUTPUT(Aktor/Signalausgang)
 digitalRead(PIN); <- liest den Zustand eines digitalen Pins (HIGH oder LOW), PIN mit der Zahl auf dem SensorKit ersetzen (ohne D)
 random(MIN, MAX); <- generiert eine Zufallszahl zwischen MIN (inklusive) und MAX (exklusive)
 delay(ZEIT); <- macht eine Pause mit der ZEIT in Millisekunden
+Oled.begin(); <- Startet die Kommunikation mit dem Display
 */
 
 //Definiere zuerst die Variabeln
 //TODO: PIN an welchem der Button (kleiner Druckknopf) angeschlossen ist - muss mit Zahl ergänzt werden
-int Button = XX; 
+int Button = ?; 
 
 int Zahl = 0; // nicht ändern. Dies ist ein Startwert und wird definiert damit das Arduino weiss, dass es sich im eine Zahl handelt.
 
@@ -19,8 +20,8 @@ int Tasterstatus = 0; // nicht ändern. Dies ist ein Startwert und wird definier
 void setup() // Hier beginnt das Setup
 {
 
-  // TODO: Nutze hier die Variabel für den Button. Ist es ein INPUT oder OUTPUT?
-  pinMode(XX, YY); 
+  // TODO: defineire den Button als Input
+
 
   // TODO: Starte die Kommunikation mit dem Display
 
