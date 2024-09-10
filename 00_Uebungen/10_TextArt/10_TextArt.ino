@@ -9,14 +9,14 @@ Oled.println("Text"); <- Am Ende vom Text wird ein Enter eingefügt, sonst gleic
 
 /*
 In dieser Übung wollen wir eine einfache Zeichnung mithilfe von Text (TextArt) erstellen. 
-
+ACHTUNG, Backslash \ kann nicht angezeigt werden!!
 Hier ist ein Beispiel:
 
 
 ^..^      /
-/_/\_____/
-   /\   /\
-  /  \ /  \
+/_/_____/
+   /   /
+  /   /  
 
 
 Damit das OLED-Display den Text so darstellen kann, 
