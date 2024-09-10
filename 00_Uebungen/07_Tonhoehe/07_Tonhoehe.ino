@@ -1,16 +1,17 @@
 /* Befehle:
-pinMode(PIN, OUTPUT oder INPUT); <- definiert den PIN, OUTPUT gibt Strom und INPUT misst den Strom am PIN, PIN mit einer Zahl ersetzen
+pinMode(PIN, OUTPUT oder INPUT); <- definiert den PIN(wo ist das Objekt angeschlossen), PIN mit der Zahl auf dem SensorKit ersetzen (ohne D), INPUT(Sensor/Signaleingang) OUTPUT(Aktor/Signalausgang)
 analogRead(PIN); <- liest den Wert eines analogen Pins, PIN mit einer Zahl ersetzen, gibt einen Wert zwischen 0 und 1023 zurück
-tone(PIN, FREQUENZ); <- erzeugt einen Ton mit einer bestimmten Frequenz am PIN, PIN mit einer Zahl und FREQUENZ mit einer Zahl in Hertz ersetzen
+tone(PIN, Frequenz); <- erzeugt einen Ton mit einer bestimmten Frequenz am PIN, PIN mit einer Zahl und Frequenz mit einer Zahl in Hertz ersetzen
 noTone(PIN); <- stoppt den Ton am PIN, PIN mit einer Zahl ersetzen
 delay(ZEIT); <- macht eine Pause mit der ZEIT in Millisekunden
 */
 
 
-  //TODO: Ersetze XX mit einer Zahl (ohne D) -> Die Zahl wird jetzt unter der Variable Buzzer abgespeichert.
-  int Buzzer = XX;
-  //TODO: Ersetze X mit einer Zahl (inklusive A -> z.B. A7)
-  int Poti = AX;
+  //TODO: Ersetze ? mit einer Zahl (ohne D) -> Die Zahl wird jetzt unter der Variable Buzzer abgespeichert.
+  int Buzzer = ?;
+
+  //TODO: Ersetze ? mit einer Zahl (inklusive A -> z.B. A7)
+  int Poti = A?;
 
 
 void setup() // Hier beginnt das Setup
@@ -24,15 +25,15 @@ void setup() // Hier beginnt das Setup
 
 void loop() // Hier beginnt das Hauptprogramm
 { 
-  //TODO: Definiere die Variable sensorWert und diese liest den Wert vom Potentiometer. Ersetze YY mit der Variable für den Buzzer
-  int sensorWert = analogRead(YY); 
+  //TODO: Definiere die Variable Sensorwert und diese liest den Wert vom Potentiometer. Ersetze ? mit der Variable für den Buzzer
+  int Sensorwert = analogRead(?); 
 
-  //Der sensorWer wird als Tonhöhe für den Buzzer genommen
-  int frequenz = sensorWert
+  //Der Sensorwert wird als Tonhöhe für den Buzzer genommen
+  int Frequenz = Sensorwert
 
-  //TODO: Erzeuge einen Ton für 1 Sekunde. Ersetze XX mit der entsprechenden Zahl.
-  tone(Buzzer, frequenz);
-  delay(XX);
+  //TODO: Erzeuge einen Ton für 1 Sekunde. Ersetze ? mit der entsprechenden Zahl.
+  tone(Buzzer, Frequenz);
+  delay(?);
   //TODO: stoppe den Ton beim Buzzer.
   
 
