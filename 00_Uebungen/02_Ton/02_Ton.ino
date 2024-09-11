@@ -18,7 +18,6 @@ der Button angeschlossen ist.
 //Definiere zuerst die Variabeln
 //TODO: PIN-Nummer für den Button auf dem SensorKit (ohne D)
 
-int Taster = ? ; 
 int Button = XX ;
 
 //TODO: PIN-Nummer für den Buzzer auf dem SensorKit (ohne D) - muss mit Zahl ergänzt werden - der Buzzer ist der kleine schwarze "Lautsprecher"
@@ -27,7 +26,6 @@ int Buzzer = ? ;
 //TODO: Millisekunden anpassen. hier definieren wir die Zeit im Befehl delay(ZEIT) - den kennst du noch von der LED Übung! 
 int Spielzeit = ???? ; 
 
-int Tasterstatus=0; // nicht ändern. Dies ist ein Startwert und wird definiert damit das Arduino weiss, dass es sich um eine Zahl handelt.
 int Buttonstatus=0; // nicht ändern. Dies ist ein Startwert und wird definiert damit das Arduino weiss, dass es sich im eine Zahl handelt.
 
 
