@@ -25,7 +25,7 @@ void loop() { //Der Loop-Bereich wird immer wiederholt solange das Arduino läuf
  //TODO: Du kannst jetzt oben dein Arduino auswählen und mit dem Pfeil-Symbol den Code auf das Arduino hochladen (Du musst hier nichts schreiben)
 
   Serial.print("Helligkeit: "); //Schreibt das Wort Helligkeit: in den Serial Monitor (unten oder oben rechts bei der Lupe öffnen)
-  Serial.println(licht); // Schreibt den Wert, welchen wir in der Variabel "licht" gespeichert haben
+  Serial.println(Light); // Schreibt den Wert, welchen wir in der Variabel "Light" gespeichert haben
  
  //TODO: Öffne den Serial Monitor (oben rechts die Lupe) und schaue welche Werte die Helligkeit hat
  //TODO: -> Versuche jetzt den Code unten anzupassen, damit deine LED leuchtet wenn es dunkel wird.
