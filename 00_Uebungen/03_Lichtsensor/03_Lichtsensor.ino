@@ -1,4 +1,8 @@
-/* Befehle:
+/* >> Was soll passieren? Was ist das Ziel der Übung? <<
+Siehst du den Lichtsensor auf dem Sensor-Kit? Er ist mit A3 Light beschriftet.
+Wenn es dunkel wird, dann soll das Licht angehen. Nutze dazu diesen Lichtsensor und die LED.
+
+>> Befehle <<
 pinMode(PIN, OUTPUT oder INPUT); <- definiert den PIN(wo ist das Objekt angeschlossen), PIN mit der Zahl auf dem SensorKit ersetzen (ohne D), INPUT(Sensor/Signaleingang) OUTPUT(Aktor/Signalausgang)
 ZAHL = analogRead(PIN); <- Zahlenwert wird am PIN gemessen. Dieser Wert wird unter der Variable "ZAHL" gespeichert.
 digitalWrite (PIN, HIGH oder LOW); <- schaltet etwas EIN (HIGH) oder AUS (LOW) - PIN mit der Zahl auf dem SensorKit ersetzen (ohne D), dann HIGH oder LOW
