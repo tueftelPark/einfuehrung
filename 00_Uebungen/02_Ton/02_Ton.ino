@@ -1,4 +1,5 @@
-/* >> Was soll passieren? Was ist das Ziel der Übung? <<
+/* 
+>> Was soll passieren? Was ist das Ziel der Übung? <<
 Du drückst den Button auf dem Sensor-Kit und der Buzzer spielt einen Ton.
 Starte mit dem programmieren, indem du alle TODO's löst. 
 Wenn es funktioniert, ändere noch die Tonhöhe oder lasse den Ton länger spielen...
