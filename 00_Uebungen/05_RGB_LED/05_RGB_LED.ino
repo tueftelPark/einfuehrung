@@ -1,4 +1,10 @@
-/* Befehle:
+/* 
+>> Was soll passieren? Was ist das Ziel der Übung? <<
+RGB steht für ROT - GRÜN - BLAU. 
+Du sollst jetzt die RGB-LED anschliessen und anschliessend kannst du Farben mischen.
+Welche Farben enstehen? Probiere es aus?
+
+>> Befehle <<
 digitalWrite (PIN, pinMode(PIN, OUTPUT oder INPUT); <- definiert den PIN(wo ist das Objekt angeschlossen), PIN mit der Zahl auf dem SensorKit ersetzen (ohne D), INPUT(Sensor/Signaleingang)
 delay(ZEIT); <- macht eine Pause mit der ZEIT in Millisekunden
 analogWrite(PIN, 0 bis 255); <- NEU: neben digitalen gibt es auch analoge Signale. Hier gibt es nicht nur HIGH oder LOW, sondern jede Zahl zwischen 0 und 255 ist möglich.
