@@ -1,4 +1,5 @@
-/* >> Was soll passieren? Was ist das Ziel der Übung? <<
+/* 
+>> Was soll passieren? Was ist das Ziel der Übung? <<
 Mit dem Buzzer kannst du Töne abspielen. 
 Jetzt möchten wir einen Alarm bauen. Jedes Mal wenn es im Klassenzimmer zu laut wird, dann ertönt der Buzzer-Alarm.
 Nutze dazu das Mikrofon - es ist auf dem Sensor-Kit mit A2 Sound angeschrieben und noch den Buzzer.
