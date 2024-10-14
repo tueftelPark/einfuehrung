@@ -1,4 +1,9 @@
-/* Befehle:
+/* 
+>> Was soll passieren? Was ist das Ziel der Übung? <<
+Hier wird eine Ampel programmiert die auf die Lautstärke reagiert. 
+Je nach dem wie laut es ist, leuchtete eine andere Farbe.
+
+>> Befehle <<
 pinMode(PIN, OUTPUT oder INPUT); <- definiert den PIN(wo ist das Objekt angeschlossen), PIN mit der Zahl auf dem SensorKit ersetzen (ohne D), INPUT(Sensor/Signaleingang) OUTPUT(Aktor/Signalausgang)
 analogRead(PIN); <- liest den Wert eines analogen Pins, PIN mit einer Zahl ersetzen, gibt einen Zahlen Wert zurück (je nach dem wie laut es ist)
 delay(ZEIT); <- macht eine Pause mit der ZEIT in Millisekunden
