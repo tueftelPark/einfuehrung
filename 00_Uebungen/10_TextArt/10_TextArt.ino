@@ -1,4 +1,10 @@
-/* Befehle:
+/* 
+>> Was soll passieren? Was ist das Ziel der Übung? <<
+Schon mal etwas gezeichnet mit Buchstaben oder anderen Text-Symbolen?
+Du kannst ja mal unser Hund ausprobieren. Cool oder?
+Versuche jetzt verschiedene Sachen zu zeichnen :) 
+
+>> Befehle <<
 Oled.begin(); <- Startet die Kommunikation mit dem Display
 Oled.setFlipMode(true oder false); <- Text auf Dsiplay wird entweder normal angezeigt oder auf dem Kopf angezeigt.
 Oled.setFont(Schriftart); <- Legt die Schriftart vom Text fest
@@ -13,10 +19,10 @@ ACHTUNG, Backslash \ kann nicht angezeigt werden!!
 Hier ist ein Beispiel:
 
 
-^..^      /
-/_/_____/
-   /   /
-  /   /  
+Oled.println(^..^      /);
+Oled.println(/_/_____/);
+Oled.println(   /   /);
+Oled.println(  /   / );
 
 
 Damit das OLED-Display den Text so darstellen kann, 
