@@ -1,6 +1,13 @@
 #include "Arduino_SensorKit.h"
 
-/* Befehle:
+/* 
+>> Was soll passieren? Was ist das Ziel der Übung? <<
+Der nächste Spieleabend steht an. Hast du noch echte Würfel zu Hause?
+Wir nicht - Ziel ist es, dass du hier deinen eigenen Würfel machst mit dem Sensor-Kit.
+Du drückst den Button und anschliessend wird dir deine Zahl auf dem OLED-Bildschirm angezeigt. 
+Kannst du auch eine Zahl zwischen 1 und 12 Würfeln oder nur 1 bis 6? Probiere mal!
+
+>> Befehle <<
 pinMode(PIN, OUTPUT oder INPUT); <- definiert den PIN(wo ist das Objekt angeschlossen), PIN mit der Zahl auf dem SensorKit ersetzen (ohne D), INPUT(Sensor/Signaleingang) OUTPUT(Aktor/Signalausgang)
 digitalRead(PIN); <- liest den Zustand eines digitalen Pins (HIGH oder LOW), PIN mit der Zahl auf dem SensorKit ersetzen (ohne D)
 random(MIN, MAX); <- generiert eine Zufallszahl zwischen MIN (inklusive) und MAX (exklusive)
