@@ -1,4 +1,10 @@
-/* Befehle:
+/* 
+>> Was soll passieren? Was ist das Ziel der Übung? <<
+Ein Bildschirm kann auch hilfreich sein, um verschiedene Informationen anzuzeigen.
+Bei den Übungen zuvor haben wir den Poti gebraucht. Aber weisst du wie fest du den Poti aufgedreht hast?
+Auf dem OLED-Bildschirm soll es jetzt anzeigen, wie viel % du das Poti aufgedreht hast...
+
+>> Befehle <<
 delay(ZEIT); <- macht eine Pause mit der ZEIT in Millisekunden
 ZAHL = analogRead(PIN); <- Wert zwischen 0 und 1023 wird am PIN gemessen. Dieser Wert wird unter der Variable "ZAHL" gespeichert.
 map(WERT, VON_MIN, VON_MAX, NACH_MIN, NACH_MAX); <- ändert den Bereich eines Wertes von einem Bereich auf einen anderen 
