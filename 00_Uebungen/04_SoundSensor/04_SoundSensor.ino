@@ -1,4 +1,9 @@
-/* Befehle:
+/* >> Was soll passieren? Was ist das Ziel der Übung? <<
+Mit dem Buzzer kannst du Töne abspielen. 
+Jetzt möchten wir einen Alarm bauen. Jedes Mal wenn es im Klassenzimmer zu laut wird, dann ertönt der Buzzer-Alarm.
+Nutze dazu das Mikrofon - es ist auf dem Sensor-Kit mit A2 Sound angeschrieben und noch den Buzzer.
+
+>> Befehle <<
 pinMode(PIN, OUTPUT oder INPUT); <- definiert den PIN(wo ist das Objekt angeschlossen), PIN mit der Zahl auf dem SensorKit ersetzen (ohne D), INPUT(Sensor/Signaleingang) OUTPUT(Aktor/Signalausgang)
 digitalWrite (PIN, pinMode(PIN, OUTPUT oder INPUT); <- definiert den PIN(wo ist das Objekt angeschlossen), PIN mit der Zahl auf dem SensorKit ersetzen (ohne D), INPUT(Sensor/Signaleingang)
 ZAHL = analogRead(PIN); <- Zahlenwert wird am PIN gemessen. Dieser Wert wird unter der Variable "ZAHL" gespeichert.
