@@ -1,4 +1,9 @@
-/* Befehle:
+/* >> Was soll passieren? Was ist das Ziel der Übung? <<
+Du drückst den Button auf dem Sensor-Kit und der Buzzer spielt einen Ton.
+Starte mit dem programmieren, indem du alle TODO's löst. 
+Wenn es funktioniert, ändere noch die Tonhöhe oder lasse den Ton länger spielen...
+
+>> Befehle <<
 pinMode(PIN, OUTPUT oder INPUT); <- definiert den PIN(wo ist das Objekt angeschlossen), PIN mit der Zahl auf dem SensorKit ersetzen (ohne D), INPUT(Sensor/Signaleingang) OUTPUT(Aktor/Signalausgang)
 WERT = digitalRead(PIN); <- das HIGH oder LOW welches gemessen wurde, speichern wir in der Variable WERT (Achtung WERT muss bei den Variabel noch definiert werden!)
 tone(PIN, FREQUENZ); <- erzeugt einen Ton mit einer bestimmten Frequenz am PIN, PIN mit einer Zahl und FREQUENZ mit einer Zahl in Hertz ersetzen
@@ -17,7 +22,6 @@ der Button angeschlossen ist.
 
 //Definiere zuerst die Variabeln
 //TODO: PIN-Nummer für den Button auf dem SensorKit (ohne D)
-
 int Button = XX ;
 
 //TODO: PIN-Nummer für den Buzzer auf dem SensorKit (ohne D) - muss mit Zahl ergänzt werden - der Buzzer ist der kleine schwarze "Lautsprecher"
