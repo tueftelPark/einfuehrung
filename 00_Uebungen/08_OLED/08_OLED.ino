@@ -1,4 +1,9 @@
-/* Befehle:
+/* 
+>> Was soll passieren? Was ist das Ziel der Übung? <<
+Ein OLED-Bildschirm kennst du vileicht von deinem Fernseher zu Hause.
+In dieser Übung kannst du jetzt verschiedene Sachen auf deinen Bildschirm auf dem Sensor-Kit schreiben.
+
+>> Befehle <<
 Oled.begin(); <- Startet die Kommunikation mit dem Display
 Oled.setFlipMode(true oder false); <- Text auf Dsiplay wird entweder normal angezeigt oder auf dem Kopf angezeigt.
 Oled.setFont(Schriftart); <- Legt die Schriftart vom Text fest
