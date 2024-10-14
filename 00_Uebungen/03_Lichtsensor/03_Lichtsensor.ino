@@ -1,4 +1,5 @@
-/* >> Was soll passieren? Was ist das Ziel der Übung? <<
+/* 
+>> Was soll passieren? Was ist das Ziel der Übung? <<
 Siehst du den Lichtsensor auf dem Sensor-Kit? Er ist mit A3 Light beschriftet.
 Wenn es dunkel wird, dann soll das Licht angehen. Nutze dazu diesen Lichtsensor und die LED.
 
