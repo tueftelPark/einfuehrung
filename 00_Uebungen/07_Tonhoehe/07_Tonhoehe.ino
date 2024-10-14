@@ -1,4 +1,9 @@
-/* Befehle:
+/* 
+>> Was soll passieren? Was ist das Ziel der Übung? <<
+Jetzt machen wir mal ein Sound-Mischpult. 
+Wir nutzen den Drehregler (Rotary Potentiometer oder kurz Poti) um den Ton im Buzzer einzustellen.
+
+>> Befehle <<
 pinMode(PIN, OUTPUT oder INPUT); <- definiert den PIN(wo ist das Objekt angeschlossen), PIN mit der Zahl auf dem SensorKit ersetzen (ohne D), INPUT(Sensor/Signaleingang) OUTPUT(Aktor/Signalausgang)
 analogRead(PIN); <- liest den Wert eines analogen Pins, PIN mit einer Zahl ersetzen, gibt einen Wert zwischen 0 und 1023 zurück
 tone(PIN, Frequenz); <- erzeugt einen Ton mit einer bestimmten Frequenz am PIN, PIN mit einer Zahl und Frequenz mit einer Zahl in Hertz ersetzen
