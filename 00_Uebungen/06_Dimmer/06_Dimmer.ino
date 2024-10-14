@@ -1,4 +1,10 @@
-/* Befehle:
+/* 
+>> Was soll passieren? Was ist das Ziel der Übung? <<
+Hast du schon einmal das Licht gedimmt? Meistens sind das solche Drehknöpfe.
+Auf dem Sensor-Kit haben wir auch so einen Drehknopf - du findest ihn als Rotary Potentiometer.
+Mit diesem Drehknopf kannst du jetzt die Helligkeit der LED einstellen. Probiere es aus!
+
+>> Befehle <<
 pinMode(PIN, OUTPUT oder INPUT); <- definiert den PIN(wo ist das Objekt angeschlossen), PIN mit der Zahl auf dem SensorKit ersetzen (ohne D), INPUT(Sensor/Signaleingang) OUTPUT(Aktor/Signalausgang)
 delay(ZEIT); <- macht eine Pause mit der ZEIT in Millisekunden
 analogWrite(PIN, 0 bis 255); <- NEU: neben digitalen gibt es auch analoge Signale. Hier gibt es nicht nur HIGH oder LOW, sondern jede Zahl zwischen 0 und 255 ist möglich.
