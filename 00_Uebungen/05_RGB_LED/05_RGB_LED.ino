@@ -12,7 +12,7 @@ analogWrite(PIN, 0 bis 255); <- NEU: neben digitalen gibt es auch analoge Signal
 
 //Zuerst die Variabeln definieren
 
-// TODO: Verbinde die RGB LED mit dem Sensorkit. Am Besten verbindest du die [- R G B] Pins mit den Pins [GND 11~ 10~ 9~].
+// TODO: Verbinde die RGB LED mit dem Sensorkit. Am Besten verbindest du die [- R G B] Pins mit den Pins [GND 11~ 10~ 9~]. - mit GND, R mit 11, G mit 10 und B mit 9
 
 // TODO: Farbe rot an Pin ?? -> Wichtig nur PWM(~) nutzen! Auf deinem Arduino sind dies die Nummern mit einer kleinen Welle -> z.B. 10~
 int LEDrot = ??; 
