@@ -28,8 +28,8 @@ int Button = XX ;
 //TODO: XX mit PIN-Nummer für den Buzzer ersetzen (auf dem SensorKit (ohne D)  - der Buzzer ist der kleine schwarze "Lautsprecher")
 int Buzzer = XX ; 
 
-//TODO: Millisekunden anpassen. hier definieren wir die Zeit im Befehl delay(ZEIT) - den kennst du noch von der LED Übung! 
-int Spielzeit = ???? ; 
+//TODO: XX mit Millisekunden ersetzen. hier definieren wir die Zeit im Befehl delay(ZEIT) - den kennst du noch von der LED Übung! 
+int Spielzeit = XX ; 
 
 int Buttonstatus=0; // nicht ändern. Dies ist ein Startwert und wird definiert damit das Arduino weiss, dass es sich im eine Zahl handelt.
 
