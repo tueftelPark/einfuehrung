@@ -25,7 +25,7 @@ int RotHelligkeit = 150; //TEST: Variable für das Einschalten
 int GruenHelligkeit = 150; //TEST: Variable für das Einschalten
 int BlauHelligkeit = 150; //TEST: Variable für das Einschalten
 
-//TODO: Ersetze das ? mit der Zahl zum Ausschalten
+//TODO: Ersetze das ? mit der Zahl zum Ausschalten - denke daran das jetzt bei analog Zahlen zwischen 0 und 255 möglich sind
 
 int RotAus = ?; //TEST: Variable für das Ausschalten
 int GruenAus = ?; //TEST: Variable für das Ausschalten
