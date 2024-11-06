@@ -22,11 +22,11 @@ der Button angeschlossen ist.
 */
 
 //Definiere zuerst die Variabeln
-//TODO: PIN-Nummer für den Button auf dem SensorKit (ohne D)
+//TODO: XX mit PIN-Nummer für den Button ersetzen (siehe SensorKit (ohne D))
 int Button = XX ;
 
-//TODO: PIN-Nummer für den Buzzer auf dem SensorKit (ohne D) - muss mit Zahl ergänzt werden - der Buzzer ist der kleine schwarze "Lautsprecher"
-int Buzzer = ? ; 
+//TODO: XX mit PIN-Nummer für den Buzzer ersetzen (auf dem SensorKit (ohne D)  - der Buzzer ist der kleine schwarze "Lautsprecher")
+int Buzzer = XX ; 
 
 //TODO: Millisekunden anpassen. hier definieren wir die Zeit im Befehl delay(ZEIT) - den kennst du noch von der LED Übung! 
 int Spielzeit = ???? ; 
