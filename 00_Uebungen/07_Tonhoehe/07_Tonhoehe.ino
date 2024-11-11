@@ -30,14 +30,16 @@ void setup() // Hier beginnt das Setup
 
 void loop() // Hier beginnt das Hauptprogramm
 { 
-  //TODO: Definiere die Variable Sensorwert und diese liest den Wert vom Potentiometer. Ersetze ? mit der Variable für den Buzzer
+  //TODO: Definiere die Variable Sensorwert und diese liest den Wert vom Potentiometer. Ersetze ? mit der Variable für den Poti
   int Sensorwert = analogRead(?); 
 
   //Der Sensorwert wird als Tonhöhe für den Buzzer genommen
   int Frequenz = Sensorwert
 
-  //TODO: Erzeuge einen Ton für 1 Sekunde. Ersetze ? mit der entsprechenden Zahl.
+ //Hier wird der Ton erzeugt mit der Frequenz
   tone(Buzzer, Frequenz);
+
+  //TODO: Erzeuge einen Ton für 1 Sekunde. Ersetze ? mit der entsprechenden Zahl.
   delay(?);
   //TODO: stoppe den Ton beim Buzzer.
   
