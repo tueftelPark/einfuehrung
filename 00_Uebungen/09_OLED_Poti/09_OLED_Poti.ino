@@ -38,9 +38,8 @@ void loop()
 
   
   int Prozent = Sensorwert/10.23; //Der Sensorwert wird in eine Zahl zwischen 0-100 umgerechnet
-  Oled.setFont(u8x8_font_chroma48medium8_r); // Schriftart
-  Oled.setCursor(33, 33);    // Position des Textes auf dem Display
-  Oled.print("Prozent:");   
+  Oled.setFont(u8x8_font_px437wyse700b_2x2_r); // Schriftart
+  Oled.setCursor(0, 0);    // Position des Textes auf dem Display 
   Oled.print(Prozent);  // Der Wert welcher unter der Variabel gespeichert ist wird auf dem Display angezeigt.
   Oled.println("%"); 
   Oled.refreshDisplay();  // Aktualisiert das Diaplay

@@ -15,14 +15,26 @@ Oled.println("Text"); <- Am Ende vom Text wird ein Enter eingefügt, sonst gleic
 
 /*
 In dieser Übung wollen wir eine einfache Zeichnung mithilfe von Text (TextArt) erstellen. 
-ACHTUNG, Backslash \ kann nicht angezeigt werden!!
-Hier ist ein Beispiel:
+ACHTUNG, Backslash \ wird nur angezeigt, wenn du zwei \\ machst!! 
+=> Zwei \\ werden als ein \ auf dem Oled dargestellt.
+
+Hier ist einige Beispiel:
 
 
-Oled.println(^..^      /);
-Oled.println(/_/_____/);
-Oled.println(   /   /);
-Oled.println(  /   / );
+Oled.println("^..^      /");
+Oled.println("/_/_____/");
+Oled.println("   /   /");
+Oled.println("  /   / ");
+
+Oled.println("  / \\__");
+Oled.println(" (    @\\____");
+Oled.println(" /         O");
+Oled.println("/   (_____/");
+Oled.println("/_____/   U");
+
+Oled.println(" (\\_/)");
+Oled.println(" (o.o)");
+Oled.println(" (> <)");
 
 
 Damit das OLED-Display den Text so darstellen kann, 
@@ -51,7 +63,7 @@ void loop()
   Oled.setCursor(0, 0);    // Position des Textes auf dem Display
 
   //TODO: Nutze Oled.println("TextArt") um das Bild auf dem Arduino anzeigen zu lassen.
-
+  //Hier einige Ideen: Katze, Katzenkopf, Fisch, Haus, Baum, Auto, etc.
 
 
 
@@ -59,7 +71,9 @@ void loop()
 
   Oled.refreshDisplay();  // Aktualisiert das Diaplay
   delay(10); // kurze Wartezeit für ein flüssiges Bild auf dem Display
-  
 
-  //TODO: Erstelle jetzt dein eigenes TextArt Bild auf. Lasse es anschliessend auf dem Arduino anzeigen. (Hier einige Ideen: Katze, Katzenkopf, Fisch, Haus, Baum, Auto, etc.)
+
+  //TODO: Erstelle ein Daumenkinofilm auf dem Arduino
+  //      Achtung. Du musst zwischen jedem Bild ein "delay(XX);" und ein "Oled.clear();" machen
+
 }
