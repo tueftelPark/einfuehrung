@@ -34,7 +34,7 @@ void loop() // Hier beginnt das Hauptprogramm
   int Sensorwert = analogRead(?); 
 
   //Der Sensorwert wird als Tonhöhe für den Buzzer genommen
-  int Frequenz = Sensorwert
+  int Frequenz = Sensorwert;
 
  //Hier wird der Ton erzeugt mit der Frequenz
   tone(Buzzer, Frequenz);
