@@ -41,13 +41,16 @@ void loop()
   analogWrite(LEDrot, RotAn); //Jetzt wird der PIN für die rote LED genommen und die Helligkeit von der Variabel
   delay(1000);
   analogWrite(LEDrot, RotAus);
+  delay(100);
   // TODO: Lasse alle anderen RGB-Farben auch NACHEINANDER leuchten -> Vergiss den delay nicht!
   analogWrite(LEDgruen, GruenAn);
   delay(1000);
   analogWrite(LEDgruen, GruenAus);
+  delay(100);
   analogWrite(LEDblau, BlauAn);
   delay(1000);
   analogWrite(LEDblau, BlauAus);
+  delay(100);
   
   // TODO: Lasse alle Farben gleichzeitig leuchten -> Was passiert?
   analogWrite(LEDrot, RotAn);
@@ -57,6 +60,7 @@ void loop()
   analogWrite(LEDrot, RotAus);
   analogWrite(LEDgruen, GruenAus);
   analogWrite(LEDblau, BlauAus);
+  delay(100);
 
   // TEST: Was passiert wenn du verschiedene Kombinationen gleichzeitig leuchten lässt?
   analogWrite(LEDrot, RotAn);
@@ -64,6 +68,7 @@ void loop()
   delay(1000);
   analogWrite(LEDrot, RotAus);
   analogWrite(LEDblau, BlauAus);
+  delay(100);
 
   // TEST: Was passiert, wenn du das 255 mit einer Zahl zwischen 0-255 ersetzt?
   
