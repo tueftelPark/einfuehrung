@@ -54,7 +54,7 @@ Buttonstatus = digitalRead(Button); // hier lesen wir am PIN mit digitalRead(PIN
 //NEU: Wir lernen if & else - wenn das passiert mache das (if) und anonsten das andere (else)
 if (Buttonstatus == HIGH) // Wenn der Button gedrückt ist... also wenn der PIN Strom bekommt, dann ist das Signal HIGH
 {
-tone(Buzzer, 300); // …spiele diesen Ton... //TEST: Verändere die Zahl in diesem Befehel - was passiert?
+tone(Buzzer, 100); // …spiele diesen Ton... //TEST: Verändere die Zahl in diesem Befehel - was passiert?
   
 //TODO: Füge hier eine Pause mit der Länge "Spielzeit" ein. Nutze die Variabel nicht die Zahl.
 

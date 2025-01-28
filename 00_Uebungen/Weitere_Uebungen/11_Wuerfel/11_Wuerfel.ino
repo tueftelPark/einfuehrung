@@ -10,7 +10,7 @@ Kannst du auch eine Zahl zwischen 1 und 12 Würfeln oder nur 1 bis 6? Probiere m
 >> Befehle <<
 pinMode(PIN, OUTPUT oder INPUT); <- definiert den PIN(wo ist das Objekt angeschlossen), PIN mit der Zahl auf dem SensorKit ersetzen (ohne D), INPUT(Sensor/Signaleingang) OUTPUT(Aktor/Signalausgang)
 digitalRead(PIN); <- liest den Zustand eines digitalen Pins (HIGH oder LOW), PIN mit der Zahl auf dem SensorKit ersetzen (ohne D)
-random(MIN, MAX); <- generiert eine Zufallszahl zwischen MIN (inklusive) und MAX (exklusive)
+random(MIN, MAX+1); <- generiert eine Zufallszahl zwischen MIN (inklusive) und MAX+1 (exklusive)
 delay(ZEIT); <- macht eine Pause mit der ZEIT in Millisekunden
 Oled.begin(); <- Startet die Kommunikation mit dem Display
 */

@@ -14,8 +14,8 @@ ZAHL = analogRead(PIN); <- Wert zwischen 0 und 1023 wird am PIN gemessen. Dieser
   int Helligkeit = 0;
   
   int Sensorwert = 0;
-  //TODO: Definiere RotaryPotentiometer mit der ensprechenden A? Nummer auf dem Sensor Kit. Ersetze ? mit einer Zahl (A inkulsive -> z.B. A7)
-  int RotaryPotentiometer = A?;
+  //TODO: Definiere das Potentiometer (Poti) mit der ensprechenden A? Nummer auf dem Sensor Kit. Ersetze ? mit einer Zahl (A inkulsive -> z.B. A7)
+  int Poti = A?;
 
   //TODO: Defiere die Variabeln Rot, Blau und Gruen mit den jeweiligen PIN-Nummern. Erestze ? mit der richtigen Zahl (Du musst die PINs 9, 10 ,11 und GND wählen)
   int Rot = ?;
@@ -30,7 +30,7 @@ void setup() // Hier beginnt das Setup
   //TODO: definiere die weiteren Farben als Ausgang.
 
 
-  //TODO: definiere das RotaryPotentiometer als Eingang.
+  //TODO: definiere das Poti als Eingang.
   
 } 
 
@@ -39,7 +39,7 @@ void loop() // Hier beginnt das Hauptprogramm
   //TODO: Definiert die Variable Sensorwert und liest den Wert vom Potentiometer. Ersetze ? mit der richtigen Variabel.
   Sensorwert = analogRead(?); 
 
-  Helligkeit = Sensorwert/4;       //1023 / 4 = 255 --> analogWrite geht nur bis 255 und RotaryPotentiometer bis 1023 
+  Helligkeit = Sensorwert/4;       //1023 / 4 = 255 --> analogWrite geht nur bis 255 und Poti bis 1023 
 
   //TODO: Setze alle Farbkanäle der RGB-LED auf den gleichen Wert, um weißes Licht zu erzeugen
   analogWrite(Rot, Helligkeit); // Rot
