@@ -9,11 +9,6 @@ delay(ZEIT); <- macht eine Pause mit der ZEIT in millisekunden
 //Die Erzeugung des Tones basiert massgeblich auf dem Befehl „tone(x, y)“, 
 //wobei der x-Wert den Pin angibt, an dem der Lautsprecher mit der positiven Seite angeschlossen ist und der y-Wert, der die Tonhöhe angibt.
 
-/*-> NEU: Wir lernen Variabeln! Eine Variabel ist ein Wort welche wir anstelle einer Zahl verwenden können
-mit int sagen wir dem Arduino, dass es sich um eine Zahl handelt. int Taster = 6; bedeutet wir geben dem Wort Taster die Zahl 6.
-Jedes Mal wenn wir das Wort Taster nutzen, dann nimmt das Arduino die Zahl 6. In unserem Fall ist die Zahl 6 der PIN an welchem
-der Taster angeschlossen ist.
-*/
 
 //Definiere zuerst die Variabeln
 //TODO: PIN-Nummer für den Button auf dem SensorKit (ohne D)

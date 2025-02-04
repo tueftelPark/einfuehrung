@@ -5,21 +5,21 @@ Starte mit dem programmieren, indem du alle TODO's löst.
 Wenn es funktioniert, ändere noch die Tonhöhe oder lasse den Ton länger spielen...
 
 >> Befehle <<
-pinMode(PIN, OUTPUT oder INPUT); <- definiert den PIN(wo ist das Objekt angeschlossen), PIN mit der Zahl auf dem SensorKit ersetzen (ohne D), INPUT(Sensor/Signaleingang) OUTPUT(Aktor/Signalausgang)
-WERT = digitalRead(PIN); <- das HIGH oder LOW welches gemessen wurde, speichern wir in der Variable WERT (Achtung WERT muss bei den Variabel noch definiert werden!)
-tone(PIN, FREQUENZ); <- erzeugt einen Ton mit einer bestimmten Frequenz am PIN, PIN mit einer Zahl und FREQUENZ mit einer Zahl in Hertz ersetzen
+pinMode(PIN, OUTPUT oder INPUT); <- definiert den PIN(wo ist das Objekt angeschlossen), PIN mit der Zahl 
+auf dem SensorKit ersetzen (ohne D), INPUT(Sensor/Signaleingang) OUTPUT(Aktor/Signalausgang)
+WERT = digitalRead(PIN); <- das HIGH oder LOW welches gemessen wurde, speichern wir in der Variable WERT 
+    (Achtung WERT muss bei den Variabel noch definiert werden!)
+tone(PIN, FREQUENZ); <- erzeugt einen Ton mit einer bestimmten Frequenz am PIN, PIN mit einer Zahl und 
+    FREQUENZ mit einer Zahl in Hertz ersetzen
 noTone(PIN); <- stoppt den Ton am PIN, PIN mit einer Zahl ersetzen
 delay(ZEIT); <- macht eine Pause mit der ZEIT in Millisekunden
 */
-
-//Die Erzeugung des Tones basiert massgeblich auf dem Befehl „tone(x, y)“, 
-//wobei der x-Wert den Pin angibt, an dem der Lautsprecher mit der positiven Seite angeschlossen ist und der y-Wert, der die Tonhöhe angibt.
-
-/*-> NEU: Wir lernen Variabeln! Eine Variabel ist ein Wort welche wir anstelle einer Zahl verwenden können
-mit int sagen wir dem Arduino, dass es sich um eine Zahl handelt. int Button = 6; bedeutet wir geben dem Wort Button die Zahl 6.
-Jedes Mal wenn wir das Wort Button nutzen, dann nimmt das Arduino die Zahl 6. In unserem Fall ist die Zahl 6 der PIN an welchem
-der Button angeschlossen ist.
+/*
+Die Erzeugung des Tones basiert massgeblich auf dem Befehl „tone(x, y)“, 
+wobei der x-Wert den Pin angibt, an dem der Lautsprecher mit der positiven Seite angeschlossen ist und der y-Wert, 
+der die Tonhöhe angibt.
 */
+
 
 //Definiere zuerst die Variabeln
 //TODO: XX mit PIN-Nummer für den Button ersetzen (siehe SensorKit (ohne D))
